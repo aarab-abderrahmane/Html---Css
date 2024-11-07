@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div style="border:2px groove black">
+   <form action="submit.php">
+     <h2 style="text-align: center;">Questionnaire de vote</h2>
+     <ol style="list-style-type:decimal">
+        <li><b>le meilleur antivirus pour est :</b></li>
+         <select>
+            <option>Avira Free Security</option>
+            <option>????</option>
+         </select>
+        <br><br>
+        <li>votre degre de satisfaction est :</li>
+          <p><span id="newvalue">40</span>%</p>
+           <input type="range" min="0" max="100" value="40" step="1" oninput="show_value(this.value)">
+           <script>
+             function show_value(value) {
+               console.log(value);
+               document.getElementById("newvalue").innerText = value;
+             }
+           </script>
+        <br>  
+        <li>avez-vous deja utilise un autre antivirus ?</li>
+         <input type="radio" id="ch1" name="choix">
+         <label for="ch1">Oui</label>
+         <input type="radio" id="ch2" name="choix">
+         <label for="ch2">Non</label>
+         
+         <br><br>
+         <input type="submit" value="Envoyer" style="border-radius: 1px; border: 1px solid black">
+         <button type="reset" onclick="location.reload();" style="border-radius: 1px; border: 1px solid black">annuler</button>
+      </form>
+     </ol>
+ </div>
+</body>
+</html>
