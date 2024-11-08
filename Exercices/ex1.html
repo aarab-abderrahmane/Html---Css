@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      .value{
+        display:flex;
+        align-items:center;
+        /*gap: 4rem;*/
+      }
+    </style>
+
 </head>
 <body>
  <div style="border:2px groove black">
@@ -16,15 +24,19 @@
             <option>????</option>
          </select>
         <br><br>
-        <li>votre degre de satisfaction est :</li>
-          <p><span id="newvalue">40</span>%</p>
-           <input type="range" min="0" max="100" value="40" step="1" oninput="show_value(this.value)">
-           <script>
-             function show_value(value) {
-               console.log(value);
-               document.getElementById("newvalue").innerText = value;
-             }
-           </script>
+        <li >
+          <p>votre degre de satisfaction est</p>
+          <div class="value">
+            <span ><span id="newvalue">40</span>%</span>
+            <input type="range" min="0" max="100" value="40" step="1" oninput="show_value(this.value)">
+            <script>
+              function show_value(value) {
+                console.log(value);
+                document.getElementById("newvalue").innerText = value;
+              }
+            </script>
+          </div>
+        </li>
         <br>  
         <li>avez-vous deja utilise un autre antivirus ?</li>
          <input type="radio" id="ch1" name="choix">
