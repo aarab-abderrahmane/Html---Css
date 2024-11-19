@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mmllo</title>   
+        <style>
+            .grid-container1{
+                display: inline-grid;
+                grid-template-rows: auto;
+                gap:12px;
+            }
+            .grid-container1 > div {
+                text-align : start;
+                background-color: grey;
+                border-radius: 5px;
+                padding: 10px;
+
+            }
+            .item2{
+                float: left;
+            }
+            .flex-container{
+                display:flex;
+                justify-content: space-around;
+            }
+
+
+            .hr{
+                height: 5px;
+                background-color: black;
+            }
+
+
+            .grid-container2{
+                display:grid;
+                grid-template-columns: repeat(6,1fr);
+                grid-template-rows: repeat(6,1fr);
+                gap:10px;
+                grid-template-areas :
+                'header header header header header header'
+                'blockA blockA main main main main' 
+                'blockB blockB main main main main'
+                'none none main main main main'
+                'blockC blockC main main main main'
+                'footer footer footer footer footer footer'
+                ;
+            }
+            .item_1{
+                grid-area: header;
+            }
+            .item_3{grid-area: main;
+            }
+            .item_2{grid-area: blockA;
+            }
+            .item_4{grid-area: blockB;
+            }
+            .item_5{grid-area: blockC;
+            }
+            .item_6{grid-area: footer;
+            }
+            
+            .grid-container2>div{
+                background-color: lightcoral;
+                text-align: start;
+                padding: 20px;
+                color: black;
+                
+            }
+        </style>    
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="grid-container1">
+            <div class="item1">le hideur</div>
+            <div class="item2">pattern<br><p>le contenu principal vient ici-meme<br> se placer avec elegance et raffinement</p></div>
+            <div class="item3">Block A</div>
+            <div class="item4">Block B</div>
+            <div class="item5">Block C</div>
+            <div class="item6">le fouteur</div>
+            <div class="item7"></div>
+            </div>
+            <img src="Capture d'écran 2024-11-19 102021.png">
+        </div>
+
+        <hr>
+
+        <div class="grid-container2">
+            <div class="item_1">le hideur</div>
+            <div class="item_2">Block A</div>
+            <div class="item_3">
+                <h2>pattern</h2>
+                <p>le contenu principal vient ici-meme<br> se placer avec elegance et raffinement</p></div>
+            <div class="item_4">Block B</div>
+            <div class="item_5">Block C</div>
+            <div class="item_6">le fouteur</div>
+        </div>
+    </body>
+
+    
+</html>
