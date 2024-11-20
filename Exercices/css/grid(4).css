@@ -5,22 +5,15 @@
     gap:10px;
     color:white;
     font-weight: bold;
-    width: 100%;
+    width: 70%;
 }
 .grid-container1 > div {
     background-color: #424242;
     padding: 8px;
-    width:100%;
+    
 }
-/* 
-.d1{
-    grid-area: 1 / 1 / 2 / 2;
-}
-.d2{
-    grid-area: 2 / 1 / 3 / 2;
-} */
+
 .d3{
-    /* grid-area: 3 / 1 / 4 / 2; */
     display:grid;
     grid-template-columns:1fr;
     grid-template-rows: repeat(6,1fr);
@@ -30,21 +23,98 @@
 }
 .d3 > div {
     background-color: #d4d3d6;
-    padding-left: 500px;
+    padding:10px;
+
 }
-.item1{
+.item_1{
     grid-area: 1 / 1 / 4 / 2;
 }
-.item2{
+.item_2{
     grid-area: 4 / 1 / 5 / 2;
 }
-.item3{
+.item_3{
     grid-area: 5 / 1 / 7 / 2;
 }
-.global{
+.flex-container{
     display: flex;
     justify-content: space-between;
     gap:50px;
 }
 
 
+/* __________________ */
+
+.grid-container2{
+    display: grid;
+    grid-column: 2fr 1fr;
+    grid-row: repeat(3,1fr);
+    gap:10px;
+    width:100%;
+}
+.grid-container2>div{
+    background-color: aquamarine;
+    padding:10px;
+}
+.item1{
+    grid-area : 1 / 1 / 2 / 4;
+}
+.item12{
+    /* width: 100px; */
+    grid-area: 2 / 3 / 3 / 4;
+}
+.inside-box{
+    /* width:60%; */
+    grid-area: 2 / 1 / 3 / 3;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: repeat(6,1fr);
+    gap:10px;
+    grid-template-areas: 'a2 a4'
+                         'a2 a5'
+                         'a8 a5'
+                         'a9 a3'
+                         'a7 a3'
+                         'a10 a11';
+}
+.item6{
+    grid-area: 3 / 1 / 4 / 4;
+}
+.inside-box > div{
+    background-color: #424242;
+    padding: 10px;
+    color:white;
+}
+.item2{
+    grid-area: a2;
+}
+.item3{
+    grid-area: a3;
+}
+.item4{
+    grid-area: a4;
+}
+.item5{
+    grid-area: a5;
+}
+.item7{
+    grid-area: a7;
+}
+.item8{
+    grid-area: a8;
+}
+.item9{
+    grid-area: a9;
+}
+.item10{
+    grid-area: a10;
+}
+.item11{
+    grid-area: a11;
+}
+div{
+    border-radius: 5px;
+}
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+}
