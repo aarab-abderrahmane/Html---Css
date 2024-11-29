@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Document</title>
+
+  <style>
+     button{
+      margin: 0 5px;
+     }
+
+     .product-row{
+      padding: 15px 0;
+      border-bottom: 1px solid black;
+
+     }
+
+     img{
+      border:2px solid black;
+      border-radius: 8px;
+     }
+     body{
+      background-color: rgb(242, 242, 238);
+      margin-top: 20px;
+     }
+
+
+  </style>
+</head>
+<body>
+  
+  
+  <h3 class="text-center font-weight-bold">Shopping Cart</h3>
+  <p class="text-center"><span class="text-info">3</span> items in your cart</p>
+  <div class="row alert alert-danger m-2"> 
+    <div class="col-12">
+        <div class="row font-weight-bold text-center">
+            <div  class="col-4 ">Product</div>
+            <div  class="col-2">Price</div>
+            <div class="col-2">Quantity</div>
+            <div  class="col-4">Actions</div>
+        </div>
+        <div class="product-row row text-center align-items-center">
+            <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="product-image mr-3">
+                    <img src="https://shop.minecraft.net/cdn/shop/products/MC-PF-CREEPER-100357-MF_1080x.png?v=1649357552" alt="Product Image 1" style="width: 60px; height: 60px;">
+                </div>
+                <div>
+                    <div>Product Name</div>
+                    <small>Brand & Name</small>
+                </div>
+            </div>
+            <div class="col-2">$49.00</div>
+            <div class="col-2">
+                <input type="number" class="form-control text-center" value="1" max="10" min="1">
+            </div>
+            <div class="col-4 action-btns">
+                <button class="btn btn-outline-success btn-sm">Update</button>
+                <button class="btn btn-danger btn-sm">Remove</button>
+            </div>
+        </div>
+        
+       </div>
+      </div>
+
+
+</body>
+</html>
