@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid(5)</title>
+
+    <style>
+        body{
+            background-color: #4ac5fd;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            color: black;
+            margin-left:10px;
+            margin-right: 10px;
+            
+        }
+        header nav ul {
+            display: flex;
+            gap:30px;
+            list-style: none;
+        
+        }
+        header nav ul a {
+            text-decoration: none;
+            color: black;
+        }
+        header div {
+            font-weight: bolder;
+            font-size:20px;
+        }
+
+        section{
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        section h2 {
+            color: white;
+            font-weight: bolder;
+            margin-top: -25px;
+            font-size: 25px;
+        }
+        button{
+            background-color: #114d66;
+            color:white;
+            border-radius: 4px;
+            padding:10px;
+            border: none;
+            
+        }
+        main{
+            margin-top: 40px;
+        }
+
+        .culture .graphic img{
+            width:100%;
+            margin-bottom: -46px;
+
+        }
+
+
+        footer .social_icons{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            margin-top: 20px;
+            gap:45px;
+        }
+
+        .content{
+            max-width: 40%;
+            margin:-35px 0 0 10px;
+        }
+        .social_icons img{
+            width:16px;
+            height: 16px;
+        }
+        .text{
+            margin-bottom: 50px;
+            
+        }
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div>LOGO</div>
+        <nav class="">
+            
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Info</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+        <section class="culture">
+            <div class="content">
+                <div class="text">
+                    <h1>LIKE NATURE</h1>
+                    <h2>BE CREATIVE</h2>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+
+                <button>MORE INFO</button>
+            </div>
+
+            <div class="graphic">
+                <img src="images/Fiche-17-theme-gestion-des-cours-d_eau-removebg-preview.png">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social_icons">
+            <a href="" id="-1"><img src="images/facebook-app-symbol.png"></a>
+            <a href="" id="-2"><img src="images/twitter.png"></a>
+            <a href="" id="-3"><img src="images/instagram.png"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
