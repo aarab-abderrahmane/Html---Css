@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .animation-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:200px;
+            height:200px;
+            animation-name:animation_1;
+            animation-duration: 10s;
+            background-color: white;
+            color:black
+        }
+        @keyframes animation_1 {
+            from {background-color: white;}
+            to {background-color: red;}
+            0% {color:red}
+            25% {color:yellow}
+            50% {color:black}
+            100% {color:green}
+        }
+
+
+    </style>
+    
+
+
+</head>
+<body>
+   
+    <div class="animation-box">Hello</div>
+
+
+</body>
+</html>
