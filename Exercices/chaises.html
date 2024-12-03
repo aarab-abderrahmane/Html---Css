@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header button{
+            background-color: white;
+            border:none;
+        }
+        header{
+            display:  flex;
+            justify-content: space-between;
+            align-items: center;
+            margin : 0 5px 0 5px
+        }
+        .badge{
+            position:absolute;
+            background-color: red;
+            padding:3px 8px;
+            border-radius: 50%;
+            top:30px;
+            right:15px;
+            text-align: center;
+            color:white;font-weight: bolder;
+        }
+
+        header h1{
+            font-weight: bolder;
+        }
+        .box-0{
+            background-color: rgb(242, 234, 224);
+            border-radius: 10px;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
+            padding: 10px;
+            text-align: center;
+            box-shadow: inset 0 0 50px 30px rgba(0, 0, 0, 0.5);
+
+
+        }
+
+        .box-0 button{
+            border-radius: 10px;
+            background-color: rgb(53, 52, 52);
+            color:white;
+            padding:10px;
+
+        }
+
+        .grid{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 1fr ,1fr;
+            gap:10px
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product List</h1>
+        <div>
+            <button type="button">
+                <img src="images/cart.png" width="32px" height="32px">
+                <span class="badge">6</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="grid">
+            <div class="box-0" id="chese1">
+                <div class="chese">
+                    <div><img src="images/LW1101-removebg-preview.png" width="70%" height="70%"></div>
+                </div>
+                <div><h1>LD01 LOUNGE CHAIR</h1></div>
+                <div><h3>2 0 0 $</h3></div>
+                <div>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="box-0" id="chese2">
+                <div class="chese">
+                    <div><img src="images/LW1101-removebg-preview.png" width="70%" height="70%"></div>
+                </div>
+                <div><h1>LD01 LOUNGE CHAIR</h1></div>
+                <div><h3>2 0 0 $</h3></div>
+                <div>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="box-0" id="chese3">
+                <div class="chese">
+                    <div><img src="images/LW1101-removebg-preview.png" width="70%" height="70%"></div>
+                </div>
+                <div><h1>LD01 LOUNGE CHAIR</h1></div>
+                <div><h3>2 0 0 $</h3></div>
+                <div>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="box-0" id="chese4">
+                <div class="chese">
+                    <div><img src="images/LW1101-removebg-preview.png" width="70%" height="70%"></div>
+                </div>
+                <div><h1>LD01 LOUNGE CHAIR</h1></div>
+                <div><h3>2 0 0 $</h3></div>
+                <div>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="box-0" id="chese5" >
+                <div class="chese">
+                    <div><img src="images/LW1101-removebg-preview.png" width="70%" height="70%"></div>
+                </div>
+                <div><h1>LD01 LOUNGE CHAIR</h1></div>
+                <div><h3>2 0 0 $</h3></div>
+                <div>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="box-0" id="chese6">
+                <div class="chese">
+                    <div><img src="images/LW1101-removebg-preview.png" width="70%" height="70%"></div>
+                </div>
+                <div><h1>LD01 LOUNGE CHAIR</h1></div>
+                <div><h3>2 0 0 $</h3></div>
+                <div>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="box-0" id="chese7">
+                <div class="chese">
+                    <div><img src="images/LW1101-removebg-preview.png" width="70%" height="70%"></div>
+                </div>
+                <div><h1>LD01 LOUNGE CHAIR</h1></div>
+                <div><h3>2 0 0 $</h3></div>
+                <div>
+                    <button type="button">Add To Cart</button>
+                </div>
+            </div>
+        
+        </div>
+
+    </main>
+</body>
+</html>
