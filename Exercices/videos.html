@@ -73,42 +73,58 @@
 
         main{
             display: grid;
-            grid-template-columns: 1fr 3fr;
+            grid-template-columns: 3fr 2fr;
             grid-template-rows: 2fr 1fr;
-            gap:10px;
+            gap:30px;
             margin-top: 45px;
         }
 
         .div_left{
+            padding-left: 10px;
             grid-area: 1 / 1 / 2 / 2;
         }
         .div_right{
             grid-area: 1 / 2 / 2 / 3;
         }
         .playlist{
+            height: 450px;
+            width: 380px;
             display: flex;
             flex-direction: column;
             background-color: #0f0f0f;
-            color:white
+            color:white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .playlist_ext{
+            overflow-y: scroll;
         }
         .partie_top{
             background-color: #212121;
-            position:relative;
+            position:sticky;
+            top:0
         }
         .partie_top , .playlist {
             border-top-left-radius:15px;
             border-top-right-radius: 15px; 
         }
-        .video_playlist img{
+        .display_video img{
             border:0px solid transparent;
             border-radius: 15px;
             margin: 10px 0 7px 10px;
             cursor:pointer;
         }
-        .video_playlist img:hover{
-            box-shadow: 0px 0px 10px red ;
-            animation : rainbow-shadow 5s infinite linear;
 
+        .display_video .image_2{
+            display: none;
+        }
+        .display_video:hover .image_1{
+            display: none;
+        }
+        .display_video:hover .image_2{
+            display: block;
+            box-shadow: 0px 0px 10px red ;
+            animation : rainbow-shadow 5s infinite linear;  
         }
         .video_playlist img:active {
             transform:scale(0.80);
@@ -116,8 +132,29 @@
         
         .video_playlist{
             display: flex;
-            gap:10px;
+            align-items: center;
+            gap:15px;
         }
+
+        .playlist_ext::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        .playlist_ext::-webkit-scrollbar-track {
+            background-color:#0f0f0f;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .playlist_ext::-webkit-scrollbar-thumb {
+            background-color: #f01f1f;
+            border-radius: 10px;
+        }
+
+        .playlist_ext::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
         @keyframes rainbow-shadow {
             0% {
                 box-shadow: 0px 0px 13px red;
@@ -144,6 +181,19 @@
                 box-shadow: 0px 0px 13px red;
             }
         }
+
+        .split{
+            width: 2px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            height:60px ;
+        }
+        hr{
+            background-color: white;
+            width: 80%;
+        }
+
 
     </style>
 
@@ -221,21 +271,83 @@
                     <p>&nbsp;&nbsp;Mixes are playlists makes for you</p>
                 </div>
 
-                <div class="video_playlist" >
-                    <div onclick="play('https://www.youtube.com/embed/pOT1T2qSd2M?list=RDQMsPAUJTkq9s4')">
-                       <img src="images/360_F_773730790_67wckVsSCZ1iu2IpunavGAeS2GwiFPIA.webp" width="140px" height="80px" >
+                <div class="playlist_ext">
+                    <div class="video_playlist" >
+                        <div class="display_video" onclick="play('https://www.youtube.com/embed/MrHjcJJL1A4')">
+                        <img class="image_1" src="images/hqdefault.webp" width="140px" height="80px">
+                        <img class="image_2" src="https://i.ytimg.com/an_webp/dj3Hfai1xEE/mqdefault_6s.webp?du=3000&sqp=COCLwroG&rs=AOn4CLCfTLGrr4p4LMRt4Jp0Y7eZ-y56HA" width="140px" height="80px" >
+                        </div>
+
+                        <div class="split"></div>
+                        <div>
+                            <h3>Chopin-Nocturne</h3>
+                            <p>andrea romano</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Chopin-Nocturne</h3>
-                        <p>andrea romano</p>
+                    <hr>
+
+                    <div class="video_playlist" >
+                        <div class="display_video" onclick="play('https://www.youtube.com/embed/idhHEnDb7u4')">
+                        <img class="image_1" src="https://i.ytimg.com/vi/idhHEnDb7u4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCCefzD1TwgQso8RA6rMYt0wyIdPw" width="140px" height="80px">
+                        <img class="image_2" src="https://i.ytimg.com/vi/idhHEnDb7u4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCCefzD1TwgQso8RA6rMYt0wyIdPw" width="140px" height="80px" >
+                        </div>
+
+                        <div class="split"></div>
+                        <div>
+                            <h3>Chopin-Nocturne</h3>
+                            <p>andrea romano</p>
+                        </div>
                     </div>
-                </div>
+                    <hr>
+
+                    <div class="video_playlist" >
+                        <div class="display_video" onclick="play('https://www.youtube.com/embed/MrHjcJJL1A4')">
+                        <img class="image_1" src="images/hqdefault.webp" width="140px" height="80px">
+                        <img class="image_2" src="https://i.ytimg.com/an_webp/dj3Hfai1xEE/mqdefault_6s.webp?du=3000&sqp=COCLwroG&rs=AOn4CLCfTLGrr4p4LMRt4Jp0Y7eZ-y56HA" width="140px" height="80px" >
+                        </div>
+
+                        <div class="split"></div>
+                        <div>
+                            <h3>Chopin-Nocturne</h3>
+                            <p>andrea romano</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="video_playlist" >
+                        <div class="display_video" onclick="play('https://www.youtube.com/embed/MrHjcJJL1A4')">
+                        <img class="image_1" src="images/hqdefault.webp" width="140px" height="80px">
+                        <img class="image_2" src="https://i.ytimg.com/an_webp/dj3Hfai1xEE/mqdefault_6s.webp?du=3000&sqp=COCLwroG&rs=AOn4CLCfTLGrr4p4LMRt4Jp0Y7eZ-y56HA" width="140px" height="80px" >
+                        </div>
+
+                        <div class="split"></div>
+                        <div>
+                            <h3>Chopin-Nocturne</h3>
+                            <p>andrea romano</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="video_playlist" >
+                        <div class="display_video" onclick="play('https://www.youtube.com/embed/MrHjcJJL1A4')">
+                        <img class="image_1" src="images/hqdefault.webp" width="140px" height="80px">
+                        <img class="image_2" src="https://i.ytimg.com/an_webp/dj3Hfai1xEE/mqdefault_6s.webp?du=3000&sqp=COCLwroG&rs=AOn4CLCfTLGrr4p4LMRt4Jp0Y7eZ-y56HA" width="140px" height="80px" >
+                        </div>
+
+                        <div class="split"></div>
+                        <div>
+                            <h3>Chopin-Nocturne</h3>
+                            <p>andrea romano</p>
+                        </div>
+                    </div>
+                </div>  
+
             </div>
         </div>
 
         <div class="div_left">
             <div >
-                <iframe id="iframe_id" style="border-radius: 15px;" width="908" height="511" src="https://www.youtube.com/embed/9E6b3swbnWg?list=RDQMsPAUJTkq9s4" title="Chopin - Nocturne op.9 No.2"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="iframe_id" style="border-radius: 15px;" width="830" height="480" src="https://www.youtube.com/embed/RK1RRVR9A2g" title="Chopin - Nocturne op.9 No.2"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Thumbnail Hover Effect</title>
+    <style>
+        .video-container {
+            position: relative;
+            width: 140px;
+            height: 80px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .video-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .video-container:hover .img_2 {
+            display: block; /* إظهار الفيديو عند التمرير */
+        }
+
+        .video-container:hover .img_1 {
+            display: none; /* إخفاء الصورة عند التمرير */
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <!-- الصورة الثابتة -->
+        <img class="img_1" src="images/hqdefault.webp" width="140px" height="80px">
+        <img class="img_2" src="https://i.ytimg.com/an_webp/dj3Hfai1xEE/mqdefault_6s.webp?du=3000&sqp=COCLwroG&rs=AOn4CLCfTLGrr4p4LMRt4Jp0Y7eZ-y56HA" width="140px" height="80px" >
+     </div>
+</body>
+</html>
