@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #links{
+            display: none;
+        
+        }
+        ol{
+            list-style: none;
+        }
+        header{
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .middle{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:5px;
+            background-color: gainsboro;
+            border-radius: 10px;
+            border:1px solid gray;
+            height: 39px;
+        }
+        .right-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:15px;
+        }
+        .icon_search{
+            background-color: gainsboro;
+            
+            /* height:20px; */
+            padding:5px;
+            border-radius: 10px;
+            margin-left:5px;
+        }
+        .search{
+            margin-right:10px;  
+            margin-top:-15px;
+            margin-bottom: -15px;
+            margin-right: 0px;
+
+        }
+        #fname{
+            padding-top:5px;
+            width:400px;
+        }
+
+        .ext_icon_search{
+            text-align: center;
+            padding:8px 5px 4px 10px;
+            margin: -3px -8px -3px -10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius:10px;
+            
+            
+        }
+        .ext_icon_search:hover {
+            background-color:red;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 2fr 1fr;
+            gap:10px;
+            margin-top: 45px;
+        }
+
+        .div_left{
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        .div_right{
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        .playlist{
+            display: flex;
+            flex-direction: column;
+            background-color: #0f0f0f;
+            color:white
+        }
+        .partie_top{
+            background-color: #212121;
+            position:relative;
+        }
+        .partie_top , .playlist {
+            border-top-left-radius:15px;
+            border-top-right-radius: 15px; 
+        }
+        .video_playlist img{
+            border:0px solid transparent;
+            border-radius: 15px;
+            margin: 10px 0 7px 10px;
+            cursor:pointer;
+        }
+        .video_playlist img:hover{
+            box-shadow: 0px 0px 10px red ;
+            animation : rainbow-shadow 5s infinite linear;
+
+        }
+        .video_playlist img:active {
+            transform:scale(0.80);
+        } 
+        
+        .video_playlist{
+            display: flex;
+            gap:10px;
+        }
+        @keyframes rainbow-shadow {
+            0% {
+                box-shadow: 0px 0px 13px red;
+            }
+            14% {
+                box-shadow: 0px 0px 13px orange;
+            }
+            28% {
+                box-shadow: 0px 0px 13px yellow;
+            }
+            42% {
+                box-shadow: 0px 0px 13px green;
+            }
+            57% {
+                box-shadow: 0px 0px 13px blue;
+            }
+            71% {
+                box-shadow: 0px 0px 13px indigo;
+            }
+            85% {
+                box-shadow: 0px 0px 13px violet;
+            }
+            100% {
+                box-shadow: 0px 0px 13px red;
+            }
+        }
+
+    </style>
+
+    
+    <script>
+        function menu() {
+            var x=document.getElementById("links")
+            if (x.style.display=="block"){
+                x.style.display="none"
+            }
+            else{
+                x.style.display="block"
+            }
+        }
+
+        function play(url) {
+            var iframe=document.getElementById("iframe_id")
+            iframe.src=url;
+        }
+    </script>
+
+</head>
+<body>
+
+    <header>
+            
+            <div class="account">
+                <img src="images/kisses.png" width="40px" height="40px">
+            </div>
+
+            <div class="middle">
+                <div class="icon_search">
+                    <button type="button" class="ext_icon_search">
+                       <img src="images/pngtree-vector-search-icon-png-image_966647-removebg-preview.png" width="19px" height="19px" >
+                    </button>
+                </div>
+
+                <div class="search" >
+                    <input type="text" id="fname" placeholder="search" style="border:none;text-align: center;padding:11px 10px 11px 0 ;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                </div>
+
+            </div>
+
+
+            <div class="right-menu">
+
+
+                <div class="logo">
+                    <img src="images/youtube.png" width="40px" height="35px">
+                </div>
+
+                <button href="" class="icon" >
+                    <img src="images/hamburger.png" width="16px" height="16px">
+                </button>
+
+                
+                <div id="links">
+                    <ol>
+                        <li>Home</li>
+                        <li>News</li>
+                        <li>play lists</li>
+                    </ol>
+
+                </div>
+                
+            </div>
+            
+    </header>
+
+    <main>
+        <div class="div_right">
+            <div class="playlist">
+                <div class="partie_top">
+                    <h2>&nbsp;playlist videos</h2>
+                    <p>&nbsp;&nbsp;Mixes are playlists makes for you</p>
+                </div>
+
+                <div class="video_playlist" >
+                    <div onclick="play('https://www.youtube.com/embed/pOT1T2qSd2M?list=RDQMsPAUJTkq9s4')">
+                       <img src="images/360_F_773730790_67wckVsSCZ1iu2IpunavGAeS2GwiFPIA.webp" width="140px" height="80px" >
+                    </div>
+                    <div>
+                        <h3>Chopin-Nocturne</h3>
+                        <p>andrea romano</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div_left">
+            <div >
+                <iframe id="iframe_id" style="border-radius: 15px;" width="908" height="511" src="https://www.youtube.com/embed/9E6b3swbnWg?list=RDQMsPAUJTkq9s4" title="Chopin - Nocturne op.9 No.2"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+</html>
