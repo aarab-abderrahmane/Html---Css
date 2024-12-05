@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart(1)</title>
+    <style>
+        body{
+            background-color: #1b2838;
+            color:white;
+        }
+        h1{
+            font-family: 'Courier New';
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:530;
+            margin : 0 5px 0 5px;
+            font-size: 20px;
+            
+        }
+        .row{
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-around;
+            gap:25px;
+        }
+        
+        img{
+            border:10px solid #1b2838;
+            margin : 10px 0 0 0 ;
+            width:90%;
+            height: 60%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .container:hover img{
+            animation : color_border 6s ease infinite;
+        }
+        @keyframes color_border{
+            0%{
+                border-color:#1b2838;
+            }
+
+            100%{
+                border-color: #171d25;
+            }
+        }
+
+        .container:hover{
+            /* animation: rotate-animation 0.1s linear infinite ; */
+            animation: top 5s ease-in-out infinite;
+
+
+        }
+        .container{
+            background-color:#171d25;
+            /* transition: background-color 0.1s ease; */
+            border:2px solid black;
+            border-radius: 15px;
+            /* overflow: hidden ; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap:20px;
+
+
+        }
+        .container:first-child{
+            margin-left: 15px;
+        }
+        .container:last-child{
+            margin-right:15px
+        }
+        .text{
+            text-align: center;
+            margin-top: -20px;
+            margin-left: 10px;
+        }
+        .container_button{
+            display: flex;
+            justify-content: center;
+        }
+        @keyframes top{
+            0%{
+                transform: translateY(-20px);
+    
+            }
+            50%{
+                transform: translateY(-50px);
+            }
+            100%{
+                transform: translateY(-20px)
+            }
+        }
+        button{
+            background-color:lightsalmon;
+            border:none;
+            margin: 0 0 15px 0;
+            padding: 10px 20px 10px 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px red;
+        
+        }
+        button:hover{
+            animation : colors 3s ease infinite , shadow_color 3s ease infinite
+        }
+
+        @keyframes colors {
+            0%{
+                background-color:red;
+            }
+            50%{
+                background-color:blueviolet;
+            }
+            100%{
+                background-color:green;
+            }
+        }
+        @keyframes shadow_color{
+            0%{
+                box-shadow:0px 0px 20px  red;
+            }
+            50%{
+                box-shadow:0px 0px 20px  blueviolet;
+            }
+            100%{
+                box-shadow:0px 0px 20px  green;
+            }
+        }
+        /* @keyframes rotate-animation {
+            from {
+                transform : rotate(0deg)
+            }    
+
+            to {
+                transform : rotate(360deg)
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="container">
+            <img src="images/Destiny 2.webp">
+            <div class="text">
+                <h1> Title One</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda esse expedita, dolores quis quaerat libero magni ab suscipit quia sequi quos maxime. Voluptatum ratione voluptatem, enim voluptas cupiditate non eos.</p>
+            </div>
+            <div class="container_button">
+                <button type="button">Read More</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="images/Destiny 2.webp">
+            <div class="text">
+                <h1> Title One</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda esse expedita, dolores quis quaerat libero magni ab suscipit quia sequi quos maxime. Voluptatum ratione voluptatem, enim voluptas cupiditate non eos.</p>
+            </div>
+            <div class="container_button">
+                <button type="button">Read More</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="images/Destiny 2.webp">
+            <div class="text">
+                <h1> Title One</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda esse expedita, dolores quis quaerat libero magni ab suscipit quia sequi quos maxime. Voluptatum ratione voluptatem, enim voluptas cupiditate non eos.</p>
+            </div>
+            <div class="container_button">
+                <button type="button">Read More</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
