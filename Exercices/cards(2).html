@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: cursive , sans-serif;
+        }
+
+        body{ background-color: #fdf0d5;        }
+
+        .container-1{
+            text-align: center;
+        }
+
+
+        .box{
+            border:2px solid black;
+            margin : 10px 10px 10px 10px;
+            display: flex;
+            flex-direction: column;
+            padding: auto;
+            width: 32vh;
+            background-color: #1c1b29;
+            color:white;
+            border-radius: 15px;
+
+        }
+
+        .container-2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:10px
+        }
+
+
+
+        .text p {
+            max-width: 300px;
+            color:#5f5f6b
+        }
+        .text{
+            margin-left: 10px;
+        }
+
+        .image{
+            clip-path : polygon(0 0,100% 0 ,100% 85% ,0 100%);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .box:hover{
+            transform: scale(1.05);
+            border-color: red;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap :15px;
+            margin:15px
+        }
+
+        .container-3{
+            border: 2px solid black;
+            margin:60px 100px 50px 100px;
+            border-radius: 15px;
+            background-color: #ffd7ba;
+        }
+
+        .container-3 h1{
+            margin-left: 15px;
+        }
+
+        form input{
+            border-radius: 5px;
+            height: 40px;
+            background-color: #403d39;
+            border : 2px solid black ;
+            color: white;
+            padding-left: 5px;
+            
+        }
+        
+        input::placeholder{
+            color: yellow;
+        }
+        
+        button {
+            height: 50px;
+            border: 2px solid black;
+            background-color: #eb5e28;
+            border-radius: 15px;
+        }
+        
+        button:hover {
+            background-color:#b7efc5 ;
+        }
+
+        textarea{
+            border:2px solid black;
+            border-radius: 10px;
+            padding-left: 5px;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container-1">
+        <h1>A propos des soft Skills</h1>
+        <p>Les soft skills , ou competences interpersonnelles , sont essentielles dans le monde professionnel .Elles incluent la communication. le travail d'equipe .le leadership , et bien plus encore</p>
+    </div>
+
+    <div class="container-2">
+        <div class="box">
+            <img class="image" src="images/PS4 games – New & upcoming games on PS4 _ PlayStation.jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img   class="image" src="images/Minecraft (2011).jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img   class="image"src="images/FIFA Football Logo Font.jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img  class="image" src="images/spideer_man.jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img   class="image"src="images/Jin Sakai (Ghost Of Tsushima).jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img class="image" src="images/PS4 games – New & upcoming games on PS4 _ PlayStation.jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img   class="image" src="images/Minecraft (2011).jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img   class="image"src="images/FIFA Football Logo Font.jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img  class="image" src="images/spideer_man.jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img   class="image"src="images/Jin Sakai (Ghost Of Tsushima).jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img class="image" src="images/PS4 games – New & upcoming games on PS4 _ PlayStation.jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img   class="image" src="images/Minecraft (2011).jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img   class="image"src="images/FIFA Football Logo Font.jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img  class="image" src="images/spideer_man.jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img   class="image"src="images/Jin Sakai (Ghost Of Tsushima).jpg"  width="auto" height="400vh">
+            <div  class="text">
+                <h2>Communication</h2>
+                <p>Savoir s'exprimer clairement et ecouter activement</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h1>Contactez-nous</h1>
+        <div>
+            <form action="name" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                <lable for="email">Email :</lable>
+                <input type="email" id="email" placeholder="Votre email" required>
+
+                <label for="message">Votre message :</label>
+                <textarea id="mesasge" name="message" rows="4" placeholder="Votre message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
