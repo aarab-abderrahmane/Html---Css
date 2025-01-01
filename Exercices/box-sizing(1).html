@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 2vw;
+        }
+
+        .box {
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .box img {
+            border-radius: 10px;
+            width: 20vw;
+            height: 30vw;
+            border: 3px solid white;
+            object-fit: cover;
+        }
+
+        img:hover {
+            border-color: red;
+            transform: scale(0.9);
+
+        }
+
+        /* Media Queries */
+        @media (max-width: 1000px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+
+        /* @media (min-width: 800px) and (max-width: 900px) {
+            .container {
+                justify-content: center;
+        } */
+
+        @media (max-width: 500px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><img src="images/Minecraft (2011).jpg" alt="Minecraft"></div>
+        <div class="box"><img src="images/FIFA Football Logo Font.jpg" alt="FIFA Logo"></div>
+        <div class="box"><img src="images/Minecraft (2011).jpg" alt="Minecraft"></div>
+        <div class="box"><img src="images/FIFA Football Logo Font.jpg" alt="FIFA Logo"></div>
+    </div>
+</body>
+</html>
