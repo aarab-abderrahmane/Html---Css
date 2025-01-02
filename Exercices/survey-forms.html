@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap');
+        *{
+            font-family: 'Anaheim',sans-serif;
+        }
+
+        h1{
+            font-weight: bold;
+            font-size: 4vw;
+        }
+        label{
+            font-size: 2vw;
+        }
+
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            gap:1.3rem
+        }
+
+        form{
+            background-color: rgb(250, 245, 221);
+            border-radius: 15px;
+            padding: 2vw 2vw;
+            border: 2px solid black;
+            margin :4rem 2rem 0 2rem;
+
+        }
+
+        .details{
+            margin-bottom: 2rem;
+
+        }
+
+        .details input{
+            width: 40vw;
+            height: 4vw;
+            border-radius: 5px;
+            border: none;
+            font-size: 2vw;
+        }
+
+        .check-all input{
+            border-radius: 10px;
+            border: none;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        .check-all div{
+            display: flex;;
+            gap:5px
+        }
+
+        legend{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form id="survy-forms" action="#" method="post">
+
+        <h1 id="titre">Application for permission to date daughter</h1>
+
+        <p id="description"><b>Note:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nemo ex omnis molestiae eos neque quaerat consectetur ipsam, officia eligendi aliquam dicta itaque! Facere ex, ut et est officia voluptatem!</p>
+
+        <fieldset class="details">
+            <legend>Personal Details</legend>
+
+            <div>
+                <label for="name-label">Name :</label>
+
+                <input type="text" name="name-label" required id="name" placeholder="Enter name here">
+
+            </div>
+
+            <div>
+                <label id="address-label" for="address-label">Address (Optional):</label>
+
+                <input type="text" name="address-label" placeholder="Enter adress here">
+
+            </div>
+
+            <div>
+
+                <label for="email-label">Email :</label>
+
+                <input name="email-label" placeholder="Enter email here" type="email">
+
+            </div>
+
+            <div>
+                <lebel for="phone-label">Phone Number :</lebel>
+
+                <input name="phone-label" placeholder="Enter 10 degit number" type="text">
+
+            </div>
+            
+
+            <div>
+    
+                <label for="IQ-label" >IQ :</label>
+
+                <input name="IQ-label" type="number" placeholder="Enter IQ here">
+
+            </div>
+
+
+            <div>
+
+              <label for="gender">Gender</label>
+
+              <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+
+              </select>
+
+            </div>
+
+            <label for="date-label">Date of Proposed Outing :</label>
+            <input type="date" name="date-label">
+
+
+        </fieldset>
+
+        <fieldset class="check-all">
+
+            <label>Check All That Apply</label>
+            
+                
+                <div>
+                    <input type="checkbox" id="tattoos" value="tattoos">
+                    <label for="tattoos">I have tattoos and/or piercings</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="age" value="age">
+                    <label for="age">I am more than 2 years older than my daughter</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="car" value="car">
+                    <label for="car">I own a panel van or V8 ute</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="work" value="work">
+                    <label for="work">I work full-time</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="rich" value="rich">
+                    <label for="rich">My parents are rich</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="loc" value="loc">
+                    <label for="loc">Is the date at a well-lit public location?</label>
+                </div>
+            
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
