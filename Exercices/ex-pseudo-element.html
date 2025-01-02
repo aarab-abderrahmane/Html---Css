@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            font-family: cursive;
+            color:red;
+            position:relative;
+        }
+
+        h1::before {
+            content :"😃";
+        }
+
+        p::after{
+            content: "➤";
+        }
+
+        button{
+            position: relative;
+            padding: 10px 10px;
+            cursor: pointer;
+            /* outline: 2px solid red; */
+            outline: none;
+
+        }
+        button::before{
+            content: " ➤";
+            color: red;
+            transition:all 1.9s ease;
+            opacity: 1;
+
+        }
+
+        button:hover::before{
+            color:green;
+            opacity: 1;   /*transparency*/
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Hello world!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio laboriosam repellat, impedit, odit neque illum quos nesciunt beatae, exercitationem asperiores eligendi molestias! Doloremque corrupti obcaecati vero nemo maxime? Quis?</p>
+
+    <button type="button">effect</button>
+</body>
+</html>

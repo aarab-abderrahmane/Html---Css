@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            padding: 0;
+            gap:0
+            
+        }
+
+        .container{
+            background-color: red;
+            background: red;
+            margin : -10px -9px 0 -9px;
+            border : 2px solid black;
+        }
+    
+
+
+        .nav-item{
+            background-color: none;
+            border : 1px solid none;
+            cursor: pointer;
+            width:50vw;
+            max-height: 2.5vw;
+            min-height: 2.5vw;
+            background-color: rgb(211, 211, 211);
+            border : none
+        }
+        .nav-item:hover{
+            background-color: gray;
+        }
+
+        .nav-item .badge {
+            top : 1px;
+            right:6px;
+            position:sticky;
+            color:white;
+            background-color: red;
+            border-radius: 50%;
+            padding: 0.5vw 1vw;
+            margin-left: 2vw;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <button class="nav-item">
+                <span class="label">Accueil</span>
+                <span class="badge">5</span>
+            </button>
+
+            <button class="nav-item">
+                <span class="label">Message</span>
+                <span class="badge">10</span>
+            </button>
+
+            <button class="nav-item">
+                <span class="label">Notification</span>
+                <span class="badge">200</span>
+            </button>
+
+            <button class="nav-item">
+                <span class="label">Parametres</span>
+                <span class="badge">5</span>
+            </button>
+
+            <button class="nav-item">
+                <span class="label">Profil</span>
+                <span class="badge">5</span>
+            </button>
+
+        </div>
+            
+    </div>
+
+</body>
+</html>
