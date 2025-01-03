@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --background-cl:#212121;
+            --text-color:rgb(255, 255, 255);
+            --border-rd:8px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-rows: repeat(2,100px);
+            grid-template-columns: repeat(3,200px);
+            gap:10px;
+        }
+
+        .box{
+            border:2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--background-cl);
+            color: var(--text-color);
+            border-radius: var(--border-rd);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="box">Boite 1</div>
+        <div class="box">Boite 2</div>
+        <div class="box">Boite 3</div>
+        <div class="box">Boite 4</div>
+        <div class="box">Boite 5</div>
+        <div class="box">Boite 6</div>
+    </div>
+
+</body>
+</html>

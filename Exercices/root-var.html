@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Exercice :root et var()</title> 
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        :root { 
+            --primary-color: #3498db; 
+            --secondary-color: #2ecc71;
+            --font-size: 18px;
+            --border-radius:10px
+        }
+        h1{
+            font-size:calc(var(--font-size)*3);
+            color:var(--secondary-color);
+
+        }
+
+        button{
+            border-radius: var(--border-radius);
+        }
+
+        button:hover{
+            background-color: var(--primary-color);
+        }
+
+        p::after {
+            content: attr(title);  /* Affiche la valeur de l'attribut title */
+            font-size: 14px;
+            color: #333;
+        }
+
+
+    </style>
+</head> 
+<body> 
+    <h1>Bienvenue sur mon site</h1> 
+    <p title="this is a title">Ceci est un paragraphe stylisé avec des variables CSS.</p> 
+    <button>Cliquez-moi</button> 
+</body> 
+</html>
