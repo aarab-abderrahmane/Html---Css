@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: bisque;
+            border:2px solid black;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 15px 15px;
+            gap:15px;
+            margin-bottom: -600px;
+        }
+
+        .item{
+            background-color: rgb(56, 205, 255);
+            color: black;
+            border:1px solid bisque;
+            border-radius: 10px;
+            padding: 10px 10px;
+            
+        }
+
+        .badge:hover{
+            cursor: pointer;
+        }
+
+        .badge{
+            background-color: rgb(6, 1, 4);
+            color: white;
+            border:1px solid black;
+            border-radius: 10px;
+            padding: 5px 5px;
+        }
+
+        .item:hover{
+            transform: translateX(10px);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container" >
+
+        <div class="item">
+            <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+            <span class="badge">Lorem</span>
+        </div>
+        
+
+        <div class="item">
+            <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+            <span class="badge">Lorem</span>
+        </div>
+
+        <div class="item">
+            <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+            <span class="badge">Lorem</span>
+        </div>
+
+        <div class="item">
+            <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+            <span class="badge">Lorem</span>
+        </div>
+
+        <div class="item">
+            <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+            <span class="badge">Lorem</span>
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>

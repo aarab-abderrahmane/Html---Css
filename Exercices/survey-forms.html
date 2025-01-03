@@ -3,175 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Application Form</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap');
-        *{
-            font-family: 'Anaheim',sans-serif;
+        * {
+            font-family: 'Anaheim', sans-serif;
         }
 
-        h1{
+        h1 {
             font-weight: bold;
             font-size: 4vw;
         }
-        label{
+
+        label {
             font-size: 2vw;
         }
 
-        fieldset{
+        fieldset {
             display: flex;
             flex-direction: column;
-            gap:1.3rem
+            gap: 1.3rem;
         }
 
-        form{
+        form {
             background-color: rgb(250, 245, 221);
             border-radius: 15px;
             padding: 2vw 2vw;
             border: 2px solid black;
-            margin :4rem 2rem 0 2rem;
-
+            margin: 4rem 10rem 4rem 10rem;
+            animation : movedown 5s ease infinite;
         }
 
-        .details{
+        @keyframes movedown {
+
+            0% {
+                transform: translateY(50px);
+            }
+
+
+            50% {
+                transform: translateY(-25px);
+            }
+
+            100%{
+                transform: translateY(50px);
+            }
+            
+        }
+
+        form:hover {
+            animation: none;
+        }
+
+        .details {
             margin-bottom: 2rem;
-
         }
 
-        .details input{
+        .details input {
             width: 40vw;
             height: 4vw;
             border-radius: 5px;
-            border: none;
+            border: 1px solid #ccc;
             font-size: 2vw;
+            padding: 0.5rem;
         }
 
-        .check-all input{
+        .check-all input {
             border-radius: 10px;
             border: none;
             width: 1.5rem;
             height: 1.5rem;
         }
-        .check-all div{
-            display: flex;;
-            gap:5px
+
+        .check-all div {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
         }
 
-        legend{
+        legend {
             font-weight: bold;
         }
 
+        .choose {
+            margin-left: -2vw;
+        }
+
+        .choose div {
+            position: relative;
+            left: -14vw;
+
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+
+
+        .choose label {
+            margin-left: -15vw;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            transform: scale(0.5);
+        }
+
+        .check-all  div:hover{
+            transform: translateX(10px);
+        }
+
+        .txt input:focus {
+            transform: translateX(15px);
+        }
     </style>
 </head>
 <body>
 
-    <form id="survy-forms" action="#" method="post">
+    <form id="survey-form" action="#" method="post">
 
-        <h1 id="titre">Application for permission to date daughter</h1>
+        <h1 id="title">Application for Permission to Date Daughter</h1>
 
-        <p id="description"><b>Note:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nemo ex omnis molestiae eos neque quaerat consectetur ipsam, officia eligendi aliquam dicta itaque! Facere ex, ut et est officia voluptatem!</p>
+        <p id="description">
+            <b>Note:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nemo ex omnis molestiae eos neque quaerat consectetur ipsam, officia eligendi aliquam dicta itaque! Facere ex, ut et est officia voluptatem!
+        </p>
 
         <fieldset class="details">
             <legend>Personal Details</legend>
 
-            <div>
-                <label for="name-label">Name :</label>
-
-                <input type="text" name="name-label" required id="name" placeholder="Enter name here">
-
+            <div   class="txt form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
             </div>
 
-            <div>
-                <label id="address-label" for="address-label">Address (Optional):</label>
-
-                <input type="text" name="address-label" placeholder="Enter adress here">
-
+            <div  class="txt form-group">
+                <label for="address">Address (Optional):</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
             </div>
 
-            <div>
-
-                <label for="email-label">Email :</label>
-
-                <input name="email-label" placeholder="Enter email here" type="email">
-
+            <div  class="txt form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
             </div>
 
-            <div>
-                <lebel for="phone-label">Phone Number :</lebel>
-
-                <input name="phone-label" placeholder="Enter 10 degit number" type="text">
-
-            </div>
-            
-
-            <div>
-    
-                <label for="IQ-label" >IQ :</label>
-
-                <input name="IQ-label" type="number" placeholder="Enter IQ here">
-
+            <div  class="txt form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit number">
             </div>
 
-
-            <div>
-
-              <label for="gender">Gender</label>
-
-              <select name="gender" id="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-
-              </select>
-
+            <div  class="txt form-group">
+                <label for="iq">IQ:</label>
+                <input type="number" id="iq" name="iq" placeholder="Enter your IQ">
             </div>
 
-            <label for="date-label">Date of Proposed Outing :</label>
-            <input type="date" name="date-label">
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <div class="choose">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male" >
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
 
-
+            <div class="form-group">
+                <label for="date">Date of Proposed Outing:</label>
+                <input type="date" id="date" name="date">
+            </div>
         </fieldset>
 
         <fieldset class="check-all">
+            <legend>Check All That Apply</legend>
 
-            <label>Check All That Apply</label>
-            
-                
-                <div>
-                    <input type="checkbox" id="tattoos" value="tattoos">
-                    <label for="tattoos">I have tattoos and/or piercings</label>
-                </div>
-            
-                <div>
-                    <input type="checkbox" id="age" value="age">
-                    <label for="age">I am more than 2 years older than my daughter</label>
-                </div>
-            
-                <div>
-                    <input type="checkbox" id="car" value="car">
-                    <label for="car">I own a panel van or V8 ute</label>
-                </div>
-            
-                <div>
-                    <input type="checkbox" id="work" value="work">
-                    <label for="work">I work full-time</label>
-                </div>
-            
-                <div>
-                    <input type="checkbox" id="rich" value="rich">
-                    <label for="rich">My parents are rich</label>
-                </div>
-            
-                <div>
-                    <input type="checkbox" id="loc" value="loc">
-                    <label for="loc">Is the date at a well-lit public location?</label>
-                </div>
-            
+            <div>
+                <input type="checkbox" id="tattoos" name="tattoos" value="tattoos">
+                <label for="tattoos">I have tattoos and/or piercings</label>
+            </div>
+            <div>
+                <input type="checkbox" id="age" name="age" value="age">
+                <label for="age">I am more than 2 years older than my daughter</label>
+            </div>
+            <div>
+                <input type="checkbox" id="car" name="car" value="car">
+                <label for="car">I own a panel van or V8 ute</label>
+            </div>
+            <div>
+                <input type="checkbox" id="work" name="work" value="work">
+                <label for="work">I work full-time</label>
+            </div>
+            <div>
+                <input type="checkbox" id="rich" name="rich" value="rich">
+                <label for="rich">My parents are rich</label>
+            </div>
+            <div>
+                <input type="checkbox" id="loc" name="loc" value="loc">
+                <label for="loc">Is the date at a well-lit public location?</label>
+            </div>
+        </fieldset>
 
+        <fieldset>
+            <legend>Additional Information</legend>
+            <div class="form-group">
+                <label for="politics">Political Persuasion:</label>
+                <input type="text" id="politics" name="politics" placeholder="Enter your political persuasion">
+            </div>
         </fieldset>
 
     </form>
-    
+
 </body>
 </html>
