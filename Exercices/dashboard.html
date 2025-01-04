@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap');
+
+        *{
+            font-family: 'Anaheim';
+            font-size: 25px;
+        }
+
+        header{
+            grid-area:header;
+            margin: -10px;
+            text-align: center;
+            background-color: #4cb04f;
+            color:white;
+            font-weight: bold;
+            padding: 0.5px 10px;
+        }
+        
+        body{
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "sidebar main"
+            "footer footer";
+
+            grid-template-columns: 200px 1fr;
+            grid-template-rows : auto 1fr auto;
+
+
+        }
+
+        main{
+            grid-area: main;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap:3px;
+        }
+
+        footer{
+            grid-area:footer;
+            background-color: aquamarine;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-top: 10px;
+        }
+        
+
+        .sidebar{
+            background-color: gray;
+            margin-top: 10px;
+            margin-left: -10px;
+        }
+
+        .sidebar ul{
+            list-style: none;
+        }
+
+        .card{
+            background-color:antiquewhite;
+            padding:20px;
+            width:200px;
+            height: 100px;
+            box-shadow: 0 4px 8px rgb(red, green, blue);
+            text-align: center;
+            border-radius: 8px;
+            transition:transform 0.3s ,box-shadow 0.3s;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <header>
+            <h1>Dashboard Page</h1>
+    </header>
+
+    <aside class="sidebar">
+        <ul>
+            <li>Dashboard</li>
+            <li>Profile</li>
+            <li>Settings</li>
+            <li>Lohout</li>
+        </ul>
+    </aside>
+
+    <main class="main">
+      <div class="container">
+        <div class="card">Total Users<br><span>1.245</span></div>
+        <div class="card">Total Users<br><span>1.245</span></div>
+        <div class="card">Total Users<br><span>1.245</span></div>
+        <div class="card">Total Users<br><span>1.245</span></div>
+        <div class="card">Total Users<br><span>1.245</span></div>
+     </div>
+    </main>
+
+    <footer>Footer</footer>
+
+</body>
+</html>
