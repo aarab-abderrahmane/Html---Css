@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            font-family: monospace;
+            font-size: 1.5vw;
+            
+            
+        }
+        ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        
+        fieldset{
+            padding-right: 15vw;
+        }
+
+        body{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+  
+
+<form action="#" method="post">
+    <fieldset>
+        <legend>Gestion de projets</legend>
+        
+
+        <ul>
+            <li>
+                <label for="numero">Numero de projet</label>
+                <input id="numero" type="text" placeholder="l'id du projet" required>
+            </li>
+
+            <li>
+                <label for="nom">Nom de projet</label>
+                <input id="nom" type="text" placeholder="le nom du projet required">
+            </li>
+
+            <li>
+                <label for="type">type du service</label>
+                <select id="type">
+                    <option value="Dev">Developpement web</option>
+                    <option value="analyse">Analyse et conception</option>
+                    <option value="tests">Tests</option>
+                </select>
+            </li>
+
+            <li>
+                <label id="date">Date de debut</label>
+                <input for="date" type="date" placeholder="jj/mm/aaaa" required>
+            </li>
+
+            <li>
+                <label for="duree">Duree (en J/H)</label>
+                <input id="duree"  min="0" max="100" type="number" placeholder="90" required>
+            </li>
+
+
+            <li>
+                <button type="reset">Renitialiser</button>
+                <button type="submit">Valider</button>
+            </li>
+
+
+        </ul>
+    </fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: monospace;
+            font-size: 1.5rem;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            width:20rem;
+            border:1px solid black;
+            height:10rem;
+            overflow: hidden;
+
+        }
+
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border:1px solid black;
+            transition: background-color 2s;
+        }
+
+        .item:hover{
+            background-color: lightgray;
+        }
+
+
+
+        .item-a{
+            /* grid-area:1/1/2/3 ; */
+            grid-column: 1 / span 2;
+            background-color: lightcoral;
+        }
+        .item-b{
+            grid-column: 1/span 2;
+            background-color: lightcyan;
+        }
+        .item-c{
+            grid-column: 1 / span 1;
+            background-color: lightgreen;
+
+        }
+        .item-d{
+            grid-column: 2 / span 1;
+            background-color: lightsalmon;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item item-a">A</div>
+        <div class="item item-b">B</div>
+        <div class="item item-c">c</div>
+        <div class="item item-d">d</div>
+    </div>
+
+</body>
+</html>
