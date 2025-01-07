@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+ 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            float: left;
+            align-items: center;
+            justify-content: center;
+        }
+ 
+        .tech-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+ 
+        .tech-card {
+            background-color: #ddd;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 200px;
+            transition: transform 0.3s ease;
+        }
+ 
+        .tech-card:hover {
+            transform: translateY(-5px);
+        }
+ 
+        .tech-logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .tech-name {
+            color: #666;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+ 
+        @media (max-width: 992px) {
+            .tech-grid {
+                flex-direction: column;
+            }
+ 
+            .tech-card {
+                width: 100%;
+                max-width: 100%;
+            }  
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div >
+                    <img src="https://imgs.search.brave.com/Hcit600OKnO0FeK7EFdtxTLDWtEOerX4WjyHtEmHRdQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8xMDUxLzEwNTEy/NzcucG5nP3NlbXQ9/YWlzX2h5YnJpZA" width="100px" height="100px" alt="HTML5 Logo">
+                </div>
+                <div class="tech-name">HTML</div>
+            </div>
+ 
+            <div class="tech-card">
+                <div >
+                    <img src="https://imgs.search.brave.com/fQjKNEDpRvdUiD_CP2c_LRCU6amV-vXse_9BmJQ-uRY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni85MTkvOTE5ODI2/LnBuZz9zZW10PWFp/c19oeWJyaWQ" width="100px" height="100px" alt="CSS3 Logo">
+                </div>
+                <div class="tech-name">CSS</div>
+            </div>
+ 
+            <div class="tech-card">
+                <div >
+                    <img src="https://imgs.search.brave.com/EZWUklB57damAEISRibzaT3cjh2Owp870wX8gKB4CDc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzgzLzYxLzY0/LzM2MF9GXzU4MzYx/NjQwM19FVXVuYXls/R1FhcTlRektyaWpN/NHhSSUdrcEFDWmRm/ZS5qcGc" width="100px" height="100px" alt="JavaScript Logo">
+                </div>
+                <div class="tech-name">JavaScript</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
