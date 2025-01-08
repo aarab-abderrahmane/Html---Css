@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/root.css" rel="stylesheet">
+
+
+    <style>
+
+        *{
+            font-family: monospace;
+        }
+
+        body{
+            margin-top:50px;
+        }
+        .col{
+            background-color: var(--bs-yellow-600);
+            border:1px solid black;
+        }
+
+        .col:hover{
+            box-shadow: 0 0 30px 20px var(--bs-yellow-500) inset;
+        }
+
+        .col-sm-4{
+            border:1px solid black;
+        }
+
+        .col-sm-4:hover{
+            box-shadow: 0 0 30px 20px var(--bs-orange-500) inset;
+        }
+
+        #md div{
+            border:1px solid black;
+            background-color:  var(--bs-green-600);
+        }
+
+        #md div:hover{
+            box-shadow: 0 0 30px 20px  var(--bs-green-500) inset;
+        }
+
+        .col-lg-6{
+            background-color: var(--bs-cyan-600) !important;
+        }
+        .col-lg-6:last-child{
+            border-left:1px solid black;
+        }
+        
+        .col-lg-6:hover{
+            box-shadow: 0 0 30px 20px  var(--bs-cyan-500) inset;
+        }
+
+        .col-xl-12:hover{
+            box-shadow: 0 0 30px 20px  var(--bs-pink-500) inset;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    .col- (extra small devices - screen width less than 576px)
+    .col-sm- (small devices - screen width equal to or greater than 576px)
+    .col-md- (medium devices - screen width equal to or greater than 768px)
+    .col-lg- (large devices - screen width equal to or greater than 992px)
+    .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+    .col-xxl- (xxlarge devices - screen width equal to or greater than 1400px) -->
+        
+    <div class="container">
+        <div class="row">
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+            <div class="col p-4">col</div>
+
+
+            
+        </div>
+
+
+        <!-- div.col{text $"repeat"}*5 -->
+
+        <div class="row">
+            <div class="col-sm-4 p-4" style="background-color: var(--bs-orange-600) !important;">col-sm-4</div>
+            <div class="col-sm-4 p-4" style="background-color: var(--bs-orange-600) !important;">col-sm-4</div>
+            <div class="col-sm-4 p-4" style="background-color: var(--bs-orange-600) !important;">col-sm-4</div>
+        </div>
+
+        <div id="md" class="row">
+
+            <div class="col-md-4 p-4">col-md-4</div>
+            <div class="col-md-8 p-4">col-md-8</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 p-4">col-lg-6</div>
+            <div class="col-lg-6 p-4">col-lg-6</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-12 p-4" style="background-color: var(--bs-pink-600) !important; border:1px solid black">col-xl-12</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

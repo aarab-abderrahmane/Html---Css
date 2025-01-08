@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/root.css" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family:monospace;
+        }
+
+        pre{
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        #item-1{
+            background-color: var(--bs-purple-500) !important;
+            box-shadow: 0 0 11px 10px white inset;
+            border-color: white;
+            transition: box-shadow 0.8s ease;
+        }
+
+        #item-1:hover{
+            box-shadow: none;
+            
+        }
+
+
+
+        #item-2:hover,#item-3:hover{
+            transition: box-shadow 0.2s ease;
+            box-shadow: 4px 4px 0 black;
+        }
+        
+        
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid text-white text-center p-5" style="background-color: var(--bs-purple-400) !important;">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <div class="container mt-5 mb-5">
+
+        <div class="row d-flex justify-content-">
+            <div id="item-1" class="col-sm-3 text-white p-3 rounded-4 " style="background-color: var(--bs-purple-600) ">
+                <h1>Column1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <pre>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris... </pre>
+            </div>
+
+            <div id="item-2" class="col-sm-3 text-white p-3 border rounded-4 " style="background-color: var(--bs-teal-600);">
+                <h1>Column1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <pre>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris... </pre>
+            </div>
+
+            <div id="item-3" class="col-sm-3 text-white p-3  " style="background-color: var(--bs-pink-500);">
+                <h1>Column1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <pre>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris... </pre>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
