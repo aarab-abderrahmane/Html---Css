@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Exercice Sélecteurs CSS</title>
+ <style>
+ /* 1. Appliquez une couleur rouge aux titres h1 */
+
+    body > h1:first-child {
+        color : red;
+    }
+
+    .highlight{
+        border : 1px solid blue ; 
+        color : yellow;
+    }
+
+    h1 ~ p {
+        font-family: monospace;
+    }
+
+    
+ /* 2. Appliquez une bordure bleue et une couleur de fond jaune aux éléments de classe "highlight"
+*/
+ /* 3. Appliquez une police personnalisée aux paragraphes */
+ </style>
+</head>
+<body>
+
+ <h1>Exemple de titre</h1>
+ <p class="highlight">Ceci est un paragraphe avec une classe spécifique.</p>
+ <p>Ceci est un autre paragraphe.</p>
+ <p>Ceci est un autre paragraphe.</p>
+
+</body>
+</html>

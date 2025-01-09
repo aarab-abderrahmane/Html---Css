@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: monospace;
+            font-size: 16px;
+        }
+        header{
+            background-color: lightgoldenrodyellow;
+            display : flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0.5rem  ;
+            box-sizing: border-box;
+            margin:-0.5rem;
+            border-bottom : 1px solid black;
+        }
+
+
+
+        .logo {
+            color: black;
+        }
+
+        .elements{
+            color: gray;
+        }
+
+        
+        .elements > ul:first-of-type {
+            display: flex ;
+            justify-content: space-around;
+            list-style: none;
+            gap:20px;
+        }
+
+        li > a {
+           text-decoration: none;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-row: auto;
+            grid-template-areas: "item-1 item-2 item-3";
+            margin-top: 10vh;
+            margin-right: 5vw;
+            margin-left: 5vw;
+        
+            text-align: center;
+
+            display: flex;
+            justify-content: center;
+            gap:50px
+
+        }
+
+        .container > div{
+            background-color: lightgray;
+            border: 1px solid black;
+            width: 75%;
+        }
+
+        .-a{
+            grid-area: item-1;
+        }
+
+        .-b{
+            grid-area: item-2;
+        }
+
+        .-c{
+            grid-area: item-3;
+        }
+        
+
+        .item > div:first-of-type {
+            background-color: lightsalmon;
+            color: black;
+            height: 25vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+ 
+        }
+
+        .item:hover{
+            box-shadow: 3px 3px 1px black;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                display: flex;
+                flex-direction: column; 
+                align-items: center; 
+                gap: 10px;
+            }
+
+            .container > div {
+                width: 70%;
+            }
+        }
+            
+       
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>Vetements</h1>
+        </div>
+
+        <div class="elements">
+            <ul>
+                <li><a href="#"  target="_blank²">Aceueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="item -j">
+                <div>image</div>
+                <div class="text">
+                    <h3>Vitement 1</h3>
+                    <p>Prix : 50 $</p>
+                </div>
+            </div>
+
+            <div class="item -b">
+                <div>image</div>
+                <div class="text">
+                    <h3>Vitement 1</h3>
+                    <p>Prix : 50 $</p>
+                </div>
+            </div>
+
+            <div class="item -c">
+                <div>image</div>
+                <div class="text">
+                    <h3>Vitement 1</h3>
+                    <p>Prix : 50 $</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+
+</body>
+</html>
