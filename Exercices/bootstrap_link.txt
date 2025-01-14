@@ -28,6 +28,7 @@ online
 
 ## exemple
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,17 +36,17 @@ online
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="../bootstrap/css(BS).css" rel="stylesheet">
     <link href="../bootstrap/root.css" rel="stylesheet">
+
+    <!-- javascript -->
+    <script src="../bootstrap/js(BS).js"></script>
 
 </head>
 <body>
     
 
-    <script src="../bootstrap/js/jquery.slim.min.js"></script>
-    <script src="../bootstrap/js/popper.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script  src="../bootstrap/js/bootstrap.bundle.min.js"></script>
-
+ 
 </body>
 </html>
