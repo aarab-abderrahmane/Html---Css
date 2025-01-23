@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: monospace;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+
+        header {
+            display: flex ;
+            justify-content: space-between;
+            align-items: center ;
+            padding: 15px 15px;
+            background-color: #f7f7f2;
+
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .home-link{
+            text-decoration: none;
+            color :lightslategray;
+            font-size: 1.2rem;
+        }
+        .home-link:hover {
+            color: black; 
+        }
+
+        .list-produit{
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+
+        }
+
+
+
+        
+
+        .product img{
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid;
+
+        }
+
+        .product img:hover {
+            animation: glow 1.5s infinite alternate;           
+
+        }
+
+        main{
+            display:  flex;
+            justify-content: space-between;
+            padding: 20px;
+
+        }
+
+        .product{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:15px;
+            border:  1px solid black;
+            padding : 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: box-shadow 0.3s ease;
+            width: 100%;
+            min-width: 400px;
+
+        }
+
+        .product:hover{
+            box-shadow: 3px 3px 0px black;
+        }
+
+        @keyframes glow {
+      0% {
+        box-shadow: 0 0 10px 0 red; /* Initial shadow */
+      }
+      50%{
+        box-shadow: 0 0 10px 2.5px red; /* Stronger shadow */
+      }
+      100% {
+        box-shadow: 0 0 10px 5px red; /* Stronger shadow */
+      }
+    }
+
+        .cart-summary{
+            border : 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            width: 40vw;
+            height: 25vh;
+            display:  flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .product-contorls{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+
+        .product-contorls > button:hover{
+            cursor: pointer;
+        }
+
+        .cart-summary > button {
+            width: 90%;
+            background-color: lightblue;
+            border-radius: 5px;
+            padding: 5px 0;
+            transition: transform 0.3s ease;
+        }
+
+        
+        .cart-summary > button:active{
+            transform: scale(0.9);
+        }
+
+        .add{
+            background-color: lightgreen;
+        }
+        
+        .product-contorls > button {
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .product-contorls button:first-child:hover{
+            background-color: lightcoral;
+        }
+
+        section:last-child{
+            background-color: lightyellow;
+        }
+
+  
+      
+
+
+
+        @media (max-width:767px){
+            main{
+                display: flex;
+                flex-direction: column;
+            }
+            .product{
+                gap:8px
+            }
+            .product-contorls{
+                margin-left: 5px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Mon Panier</div>
+        <a href="#" class="home-link" >Accueil</a>
+    </header>
+
+    <main>
+
+        <section class="list-produit">
+            <div class="product">
+                <img src="images/pexels-madebymath-90946.jpg" alt="">
+                <div class="product-info">
+                    <h3>Dslr Camera</h3>
+                    <p>Prix : 599€</p>
+                </div>
+                <div class="product-contorls">
+                    <button>-</button>
+                    <button>1</button>
+                    <button class="add">+</button>
+                    <p>Total : 799€</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pexels-eprism-studio-108171-335257.jpg" alt="">
+                <div class="prodcut-info">
+                    <h3>Close-up</h3>
+                    <p>Prix : 599€</p>
+                </div>
+                <div class="product-contorls">
+                    <button>-</button>
+                    <button>1</button>
+                    <button class="add">+</button>
+                    <p>Total : 799€</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="cart-summary">
+            <h3>Resume du ânier</h3>
+            <p>Total : 154€</p>
+            <button type="submit">Passer la commande</button>
+        </section>
+
+    </main>
+
+</body>
+</html>
