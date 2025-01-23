@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link href="../bootstrap/css(BS).css" rel="stylesheet">
+    <link href="../bootstrap/root.css" rel="stylesheet">
+
+    <!-- javascript -->
+    <script type="module" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
+        <div class="container-fluid">
+
+            <!--! logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/bootstrap.png" alt="bootstrap-png" width="30" height="30">
+
+                Mon Application
+            </a>
+
+            <!--!for mobile-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+
+             <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- ! content navbar-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profil</a>
+                    </li>
+
+                    <!-- !Dropdown-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parametres</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item">Modifier le profil</a></li>
+                            <li><a class="dropdown-item">Modifier le profil</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+ 
+</body>
+</html>
