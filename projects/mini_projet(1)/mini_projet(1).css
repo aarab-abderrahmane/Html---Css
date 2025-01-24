@@ -1,0 +1,135 @@
+*{
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    
+}
+
+.admin-panel{
+    background-color: lightgray;
+    width: 16vw;
+    min-width: 200px;
+    text-align: start;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.items ul {
+    list-style: none;
+    padding: 0;
+}
+.items{
+    text-align: start;
+    background-color: red;
+}
+
+.items ul li button {
+    width: 100%;
+    padding: 2vh;
+    border : none;
+    background-color: lightgray;
+}
+
+.items ul li button p {
+    font-size: clamp(16px,2vw,20px);
+
+}
+
+.items ul li button:hover{
+    background-color: gray;
+}
+
+.admin-panel  h1 {
+    text-align: center;
+}
+
+
+header nav ul {
+    list-style: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 100px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px
+}
+
+header nav ul li button {
+    border-color: green;
+    border-radius: 5px;
+    color: green;
+    padding: 8px;
+}
+
+header{
+    background-color: #f7f9fa;
+    padding: 0 15px 0 0;
+}
+
+.top-bar ul li p {
+    font-size: clamp(16px,2vw,30px);
+    
+}
+
+.top-bar ul li h2{
+    font-size: clamp(16px,3vw,40px);
+    
+}
+
+.top-bar ul li input {
+    padding: 10px;
+    border-radius: 30px;
+    width: 20vw;
+}
+
+
+
+
+
+.data img {
+    width: 40vw;
+    height: 20vw;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.container-2{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+
+.total{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    width: 20vw;
+    height: 16vw;
+    max-height: 200px;
+}
+
+main{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.total h3,p{
+    font-size: clamp(16px,2vw,25px);
+    
+}

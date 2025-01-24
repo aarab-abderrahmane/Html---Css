@@ -13,17 +13,42 @@
     <script type="module" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     
     <style>
-        img{
+        *{
+            font-family: monospace;
+        }
+        .card-body  img{
             width: 40px;
             height: 40px;
         }
+
+        footer ul.social-icons img{
+            margin-right: 10px;
+            width:20px;
+            height:20px
+        }
+
+
+    
+        body{
+            background-color: lightcoral;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            min-height: 100vh;
+        }
+        
+        #main {
+            flex-grow: 1;
+        }
+
+   
 
     
     </style>
 </head>
 <body>
     
-    <div class="container  mt-5 ">
+    <div class="container-fluid  mt-5 " id="main">
         <div class="row">
             <div class="col-sm-4 mb-3">
                 <div class="card text-center bg-info">
@@ -61,11 +86,23 @@
 
         </div>
 
-     
-        
-     
 
     </div>
+
+    <footer class="bg-warning text-center text-light p-2">
+        <div class="container-fluid text-center text-black ">
+            @2025 GestionPro | Tous droits reserves
+
+            <ul class="social-icons p-1 text-center d-flex justify-content-center " style="list-style: none;">
+                <li><img src="images/icons/facebook-app-symbol.png" alt="facebook"></li>
+                <li><img src="images/icons/twitter.png" alt="twitter"></li>
+                <li><img src="images/icons/instagram.png" alt="instagrame"></li>
+            </ul>
+              
+        </div>
+
+    </footer>
+    
 
 </body>
 </html>
