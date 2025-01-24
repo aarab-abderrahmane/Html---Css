@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link href="../bootstrap/css(BS).css" rel="stylesheet">
+    <link href="../bootstrap/root.css" rel="stylesheet">
+
+    <!-- javascript -->
+    <script type="module" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+
+</head>
+<body>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal">Ajouter un projet</button>
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Formulaire de Projet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="projectName" class="form-label">Nom du projet</label>
+                            <input type="text" class="form-control" id="projectName" placeholder="Entrez le nom du projet">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="projectManager" class="form-label">Responsive du projet</label>
+                            <select class="form-select" id="projectManager">
+                                <option selected>Selectionnez un responsable</option>
+                                <option value="1">Jean Dupont</option>
+                                <option value="2">Claire</option>
+                                <option value="3">Pual Lambert</option>
+                            </select>
+                        </div>
+
+                        <!-- ! dates -->
+                        <div class="mb-3">
+                            <label class="form-label" for="startDate">Date de debut</label>
+                            <input type="date" class="form-control" id="startDate">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="endDate" class="form-label">Date de fin</label>
+                            <input type="date" class="form-control" id="endDate">
+                        </div>
+
+                        <!-- !status -->
+                        <div class="mb-3">
+                            <label class="form-label">Statut</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="statusPending" value="pending">
+                                    <label class="form-check-label" for="statusPending">En attente</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="statusInProgress" value="inProgress">
+                                    <label class="form-check-label" for="statusInProgress">En cours</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="statusCompleted" value="completed">
+                                    <label class="form-check-label" for="statusCompleted">Terminé</label>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">Soumettre</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+ 
+</body>
+</html>

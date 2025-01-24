@@ -1,25 +1,24 @@
-/* all-bootstrap.css */
+/* @import url("../bootstrap/css/bootstrap-grid.css");
+@import url("../bootstrap/css/bootstrap-grid.min.css");
+@import url("../bootstrap/css/bootstrap-grid.rtl.css");
+@import url("../bootstrap/css/bootstrap-grid.rtl.min.css");
 
-/* Bootstrap Grid System */
-@import url("../bootstrap/css/bootstrap-grid.css"); /* Unminified grid CSS */
-@import url("../bootstrap/css/bootstrap-grid.min.css"); /* Minified grid CSS */
-@import url("../bootstrap/css/bootstrap-grid.rtl.css"); /* Unminified RTL grid CSS */
-@import url("../bootstrap/css/bootstrap-grid.rtl.min.css"); /* Minified RTL grid CSS */
+@import url("../bootstrap/css/bootstrap-reboot.css");
+@import url("../bootstrap/css/bootstrap-reboot.min.css");
+@import url("../bootstrap/css/bootstrap-reboot.rtl.css");
+@import url("../bootstrap/css/bootstrap-reboot.rtl.min.css");
 
-/* Bootstrap Reboot (Normalize/reset styles) */
-@import url("../bootstrap/css/bootstrap-reboot.css"); /* Unminified reboot CSS */
-@import url("../bootstrap/css/bootstrap-reboot.min.css"); /* Minified reboot CSS */
-@import url("../bootstrap/css/bootstrap-reboot.rtl.css"); /* Unminified RTL reboot CSS */
-@import url("../bootstrap/css/bootstrap-reboot.rtl.min.css"); /* Minified RTL reboot CSS */
+@import url("../bootstrap/css/bootstrap-utilities.css");
+@import url("../bootstrap/css/bootstrap-utilities.min.css");
+@import url("../bootstrap/css/bootstrap-utilities.rtl.css");
+@import url("../bootstrap/css/bootstrap-utilities.rtl.min.css");
 
-/* Bootstrap Utilities (Helper classes) */
-@import url("../bootstrap/css/bootstrap-utilities.css"); /* Unminified utilities CSS */
-@import url("../bootstrap/css/bootstrap-utilities.min.css"); /* Minified utilities CSS */
-@import url("../bootstrap/css/bootstrap-utilities.rtl.css"); /* Unminified RTL utilities CSS */
-@import url("../bootstrap/css/bootstrap-utilities.rtl.min.css"); /* Minified RTL utilities CSS */
+@import url("../bootstrap/css/bootstrap.css");
+@import url("../bootstrap/css/bootstrap.min.css");
+@import url("../bootstrap/css/bootstrap.rtl.css");
+@import url("../bootstrap/css/bootstrap.rtl.min.css");
+ */
 
-/* Bootstrap Core (Main framework) */
-@import url("../bootstrap/css/bootstrap.css"); /* Unminified core CSS */
-@import url("../bootstrap/css/bootstrap.min.css"); /* Minified core CSS */
-@import url("../bootstrap/css/bootstrap.rtl.css"); /* Unminified RTL core CSS */
-@import url("../bootstrap/css/bootstrap.rtl.min.css"); /* Minified RTL core CSS */
+
+/* Core Bootstrap CSS */
+@import url("../bootstrap/css/bootstrap.min.css");
