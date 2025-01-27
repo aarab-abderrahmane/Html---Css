@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width  ; initial-scale:1.0" >
+
+        <style>
+            *{
+                font-family: monospace;
+            }
+
+            .buttons button:first-child {
+                background-color: green;
+                color :white;
+            }
+
+            .buttons button:last-child {
+                background-color: red;
+                color:white
+            }
+
+            fieldset input {
+                margin-bottom: 10px;
+            }
+
+            fieldset select {
+                margin-bottom: 10px;
+            }
+
+            .buttons{
+                display: flex;
+                justify-content:center;
+                gap:100px
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <form action="submit_from.php" method="post">
+                <fieldset>
+                    <legend>inscrire</legend>
+
+                    <label for="nom-label">Nom</label>
+                    <input type="text" id="nom-label" placeholder=".. ."><br>
+                    
+                    <label for="prenom-label">Prenom</label>
+                    <input type="text" id="prenom-label" required><br>
+                    
+                    <label for="CIN-label">CIN</label>
+                    <input type="text" id="CIN-label" placeholder=".. ." ><br>
+
+                    <label for="date-label">date naissance</label>
+                    <input type="date" id="date-label" required><br>
+
+                    <label for="gender">Gender :</label>
+                    <!-- <select id="gender">
+                        <option vlaue="male">Male</option>
+                        <option vlaue="femme">Femme</option>
+                    </select> -->
+                    <div id="gender">
+                        <label>
+                           <input value="male" name="gender" type="radio" required> Male
+                        </label>
+
+                        <label>
+                           <input value="femme" name="gender" type="radio" required> Female
+                        </label>
+                    </div> 
+
+                    <label for="vile-label">Ville</label>
+                    <select id="vile-label" required name="ville">
+                        <option vlaue="casablanca">casablanca</option>
+                        <option value="rebat">rebat</option>
+                        <option vlaue="marrakech">marrakech</option>
+                        <option vlaue="fes">fes</option>
+                    </select> <br>
+
+                    <label for="niveau-label">niveau scolaire</label>
+                    <select id="niveau-label" name="niveau_scolaire" requires>
+                        <option vlaue="primaire">Primaire</option>
+                        <option vlaue="college">college</option>
+                    </select> <br>
+
+                    <label for="phone-label">Nemuro de telephone</label>
+                    <input type="tel" id="phone-label"> <br>
+                    
+
+                    <label for="chargefile">Select a file to upload</label>
+                    <input type="file" id="chargefile" name="chargefile"> <br>
+              
+                    <div class="buttons">
+                        <button type="submit">Valider</button>
+                        <button type="reset">Annuler</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css and bootstrap example</title>
+
+    <!-- css -->
+    <link href="../bootstrap/css(BS).css" rel="stylesheet">
+    <link href="../bootstrap/root.css" rel="stylesheet">
+
+    <!-- javascript -->
+    <script type="module" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        *{
+            font-family: monospace,sans-serif;
+
+        }
+        body{min-height: 100vh;background-color: gray;}
+
+        header{
+            color: blue;
+        }
+
+
+        nav ul li a {
+            font-family: Arial, Helvetica, sans-serif   ;
+            color: white;
+            list-style: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            font-weight:bold
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        .article:hover{
+            border:2px solid blue;
+            border-radius: 20px;
+            background-color: rgb(160,220,123);
+        }
+
+        input[type="submit"]:focus{
+            background-color: black;
+            color:white
+        }
+
+        @media (max-width:700px){
+            .article {
+                display:block;
+                width: 100%;
+                margin:10px 0
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="text-center mt-3">
+        <h1>My Website</h1>
+    </header>
+
+    <nav class="bg-dark p-3 mt-5">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container mt-5 p-5">
+        <div class="row">
+            <div class="col-md-4 article">
+                <h2>Article</h2>
+                <p>Content for article 1</p>
+            </div>
+
+            <div class="col-md-4 article">
+                <h2>Article</h2>
+                <p>Content for article 1</p>
+            </div>
+
+            <div class="col-md-4 article">
+                <h2>Article</h2>
+                <p>Content for article 1</p>
+            </div>
+        </div>
+    </div>
+
+    <form class="text-center mt-5" >
+        <input type="submit" value="submit">
+    </form>
+
+
+
+    
+
+ 
+</body>
+</html>
