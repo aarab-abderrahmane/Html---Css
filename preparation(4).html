@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta  name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>CMC</title>
+
+        <style>
+            *{
+                font-family: monospace;
+            }
+
+            body{min-height: 100vh;margin: 0;padding: 0;}
+            header{
+                background-color: black;
+                color: white;
+                padding: 15px;
+            }
+
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            nav ul {
+                display: flex;
+                gap: 20px;
+            }
+            
+            nav ul li {list-style: none;}
+
+            .jumbotron{
+                text-align: center;
+            }
+
+            .title{margin-bottom: 40px;}
+
+            .buttons button{
+               padding: 8px 30px;
+               border-radius: 0px;
+               font-weight: bold;
+            }
+
+            .buttons button:first-child{
+               box-shadow: 3px 3px 0px  green;
+
+            }
+
+           
+            .buttons button:last-child{
+               box-shadow: 3px 3px 0px  red;
+                
+            }
+
+            .buttons{display: flex;gap:20px;justify-content: center;align-items: center;}
+
+            .buttons button:hover{
+                background-color: rgb(187, 184, 184);
+
+            }
+
+            .buttons button:first-child:hover{
+                box-shadow: 3px 3px 10px green;
+            }
+
+            .buttons button:last-child:hover{
+                box-shadow: 3px 3px 10px red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+
+            <nav>
+                 <h1>CMC-Pole Digital</h1>
+
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </nav>
+
+            <div class="jumbotron">
+                <div class="title">
+                    <h2>BIENVENUE CHEZ SAHRA-BUREAU</h2>
+                    <h3>fournitures , high-tech et plus..</h3>
+                </div>
+
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, molestias. Molestiae vel quidem facere cum neque accusantium repellat eum, pariatur, aliquam sed cumque est nam, exercitationem placeat inventore repudiandae delectus!</p>
+                    <div class="buttons">
+                        <button type="submit">S'incrire</button>
+                        <button type="button">Plus Details</button>
+                    </div>
+                </div>
+          
+
+            </div>
+        </header>
+
+        
+    </body>
+</html>
