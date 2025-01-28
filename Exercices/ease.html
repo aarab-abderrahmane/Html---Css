@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ease examples</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+
+        <style>
+            /* ease → Starts slow, speeds up in the middle, and slows down at the end.
+            ease-in → Starts slow and then speeds up.
+            ease-out → Starts fast and then slows down.
+            ease-in-out → Starts slow, speeds up in the middle, and slows down at the end.
+            linear → Moves at a constant speed. */
+            *{
+                font-family: monospace;
+            }
+            .box{
+                width: 50vw;
+                height: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2vw;
+                border-radius: 8px;
+            }
+
+            .container{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap:50px
+
+            }
+
+            .ease{
+                transition: transform 2s ease;            }
+
+            .ease-in{
+                transition: transform 2s ease-in;
+            }
+
+            .ease-out{
+                transition:transform 2s ease-out;
+            }
+
+            .ease-in-out{
+                transition: transform 2s ease-in-out;
+            }
+
+            .linear{
+                transition : transform 2s linear
+
+            }
+
+            .box:hover {
+                transform: translateX(300px);
+
+                transition-timing-function: ease-in;
+                
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box ease" style="background-color: blue;">ease</div>
+            <div class="box ease-in" style="background-color: green;">ease-in</div>
+            <div class="box ease-out" style="background-color: orange;">ease-out</div>
+            <div class="box ease-in-out" style="background-color: purple;">ease-in-out</div>
+            <div class="box linear" style="background-color: rgb(18, 255, 144);">linear</div>
+        </div>
+    </body>
+</html>
