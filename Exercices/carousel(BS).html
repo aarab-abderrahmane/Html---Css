@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- CSS -->
+  <link href="../bootstrap/css(BS).css" rel="stylesheet">
+  <link href="../bootstrap/root.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- JavaScript -->
+  <script type="module" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <style>
+    .card {
+      border: 1px dashed black;
+      font-family: monospace;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body class="d-flex align-items-center justify-content-center">
+  <div id="monCarousel" class="container carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#monCarousel" data-bs-slide-to="0" class="bg-success active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#monCarousel" data-bs-slide-to="1" class="bg-secondary" aria-label="Slide 2"></button>
+    </div>
+
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active d-flex justify-content-center">
+        <div class="card alert alert-success" style="max-width: 500px;">
+          <div class="card-body">
+            <a href="#" class="text-success mb-2 d-inline-block">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nesciunt non eius amet magni magnam vero nihil autem blanditiis cum possimus maxime repudiandae, expedita vitae perspiciatis quae dignissimos, eligendi commodi.
+            </p>
+            <div class="d-flex justify-content-center align-items-center mt-3 p-3">
+              <img src="images/icons/profile.png" alt="Profile Picture" class="me-3" style="width: 40px; height: 40px;">
+              <div class="d-flex flex-column align-items-start">
+                <h3 class="mb-0">Abdulrahman Aarab</h3>
+                <p class="mb-0">Dev Informatique</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item d-flex justify-content-center">
+        <div class="card alert alert-danger" style="max-width: 500px;">
+          <div class="card-body">
+            <a href="#" class="text-success mb-2 d-inline-block">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nesciunt non eius amet magni magnam vero nihil autem blanditiis cum possimus maxime repudiandae, expedita vitae perspiciatis quae dignissimos, eligendi commodi.
+            </p>
+            <div class="d-flex justify-content-center align-items-center mt-3 p-3">
+              <img src="images/icons/profile.png" alt="Profile Picture" class="me-3" style="width: 40px; height: 40px;">
+              <div class="d-flex flex-column align-items-start">
+                <h3 class="mb-0">Abdulrahman Aarab</h3>
+                <p class="mb-0">Dev Informatique</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#monCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#monCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</body>
+</html>
