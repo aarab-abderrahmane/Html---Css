@@ -10,7 +10,7 @@ header{
 
 }
 
-body{margin: 0;}
+body{margin: 0;min-width: 920px;}
 
 header img:first-child{width: 50px; height: 50px;}
 
@@ -55,6 +55,8 @@ body section:first-of-type{
     align-items: center;
     padding: 20px;
     background-color: #293241;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
 }
 
 body section:first-of-type div h1{color: white;font-size: 1.7rem;}
@@ -68,7 +70,7 @@ body section:first-of-type div h1{color: white;font-size: 1.7rem;}
 
 .image-hero{
     border:4px dashed pink;
-    border-radius: 15px;
+    border-radius: 20px 20px 70px 20px;
     animation:borderChange 15s ;
     box-shadow: -30px -30px 1000px pink;
 }
@@ -146,3 +148,85 @@ body section:first-of-type div h1{
    margin-bottom: 30px;
 }
 
+
+.header_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.trending_games{padding: 40px 15px;}
+
+.global-text h1{margin-top: 0px;}
+
+.view_button{background-color: #283618; color: white;border: 3px solid black;border-radius: 15px;padding: 8px 20px;}
+
+.view_button:hover{background-color:#606c38 ;}
+
+.shop-icon img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin: 2px;
+}
+
+.shop-icon { border-radius: 15px;background-color: white;padding: 0 20px;border:1px  solid black;margin-top: -10px;}
+
+.shop-icon:hover{background-color: rgba(138, 194, 231, 0.5);}
+
+.card{
+    border: 2px solid black;
+    border-radius: 15px;
+    min-width: 10%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    background-color: #ededed;
+}
+
+.card img:first-child{border-top-left-radius: 15px;border-top-right-radius: 15px;}
+
+
+.cards-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+
+
+.each-cards{
+    padding: 40px;
+    background-color: #ededed;
+    border-radius: 70px;
+    margin: 0px 30px ;
+}
+
+.card-top-game img{border-radius: 25px;border:1px solid black}
+.card-top-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+    border-right: 1px dashed black;
+}
+
+.card-top-game p {
+    margin-top: 9px;
+    margin-bottom: -12px;
+}
+
+.card-top-game button{
+    background-color: #293241;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+#top-games div:last-child{
+    border: none;
+}
