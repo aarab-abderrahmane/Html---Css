@@ -50,7 +50,8 @@ header div:first-child{
 
 body section:first-of-type{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap:10vw;
     align-items: center;
     padding: 20px;
     background-color: #293241;
@@ -118,7 +119,7 @@ body section:first-of-type div h1{color: white;font-size: 1.7rem;}
 
 .search input{
     position: relative;
-    padding: 10px 120px 10px 10px;
+    padding: 10px 122px 10px 10px;
     border-radius: 15px ;
     border:none;
     width: 200px;
@@ -128,10 +129,10 @@ body section:first-of-type div h1{color: white;font-size: 1.7rem;}
 
 .search button{
     position: relative;
-    right: 12vw;
+    right: 24%;
     padding: 10px 16px;
     border-radius: 5px 15px 15px 5px;
-    border: 2px solid black;
+    border: 2.5px solid black;
     height: 44px;
     font-weight: bold;
     background-color: #ee6c4d;
