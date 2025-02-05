@@ -230,3 +230,52 @@ body section:first-of-type div h1{
 #top-games div:last-child{
     border: none;
 }
+
+
+
+
+.top-categories{padding: 10px; margin-top: 40px;}
+.top-categories div:first-child{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.top-categories div:first-child h3{
+    margin-bottom: -10px;
+}
+
+.top-categories div:last-child img{
+    border-radius: 15px;
+    border-top: 1px dashed black;
+    width: 100%;
+    height: auto;
+}
+
+.top-ctg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    border:1px dashed black;
+    background-color: #ededed;
+    overflow: hidden;
+    height: 260px;
+    transition: transform 1s ease;
+}
+
+.top-ctg:hover {
+    transform: scale(1.1);
+}
+
+footer{
+    padding: 20px;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    box-shadow: inset 10px 100px 1000px rgb(12, 0, 44);
+
+}
+
