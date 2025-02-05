@@ -81,39 +81,47 @@ body section:first-of-type div h1{color: white;font-size: 1.7rem;}
         box-shadow: -30px -30px 1000px green;
     }
     10%{
-        border-color: red;box-shadow: -30px -30px 1000px red;
+        border-color: red;
+        box-shadow: -30px -30px 1000px red;
     }
     20%{
-        border-color: yellow;box-shadow: -30px -30px 1000px yellow;
+        border-color: yellow;
+        box-shadow: -30px -30px 1000px yellow;
     }
     30%{
-        border-color: orange;box-shadow: -30px -30px 1000px orange;
+        border-color: orange;
+        box-shadow: -30px -30px 1000px orange;
     }
     40%{
-        border-color: orangered;box-shadow: -30px -30px 1000px orangered;
+        border-color: orangered;
+        box-shadow: -30px -30px 1000px orangered;
     }
     50%{
-        border-color: aqua;box-shadow: -30px -30px 1000px aqua;
+        border-color: aqua;
+        box-shadow: -30px -30px 1000px aqua;
     }
     60%{
-        border-color: gray;box-shadow: -30px -30px 1000px gray;
-    }
-    60%{
-        border-color: blue;box-shadow: -30px -30px 1000px blue;
+        border-color: gray;
+        box-shadow: -30px -30px 1000px gray;
     }
     70%{
-        border-color: pink;box-shadow: -30px -30px 1000px pink;
+        border-color: blue;
+        box-shadow: -30px -30px 1000px blue;
     }
     80%{
-        border-color: violet;box-shadow: -30px -30px 1000px white;
+        border-color: violet;
+        box-shadow: -30px -30px 1000px white;
     }
     90%{
-        border-color: purple;box-shadow: -30px -30px 1000px purple;
+        border-color: purple;
+        box-shadow: -30px -30px 1000px purple;
     }
     100%{
-        border-color:#ee6c4d ;box-shadow: -30px -30px 1000px rgb(148, 52, 52)
+        border-color: #ee6c4d;
+        box-shadow: -30px -30px 1000px rgb(148, 52, 52);
     }
 }
+
 
 .image-hero:hover{
     border-color: orange;
