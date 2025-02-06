@@ -1,0 +1,186 @@
+
+<!--
+**Examen Complet - Développement de Sites Web Statiques**
+
+**Durée : 2 heures**
+
+### **Partie 1 : Questions Théoriques (10 points)**
+
+1. Expliquez brièvement l'historique du HTML et son évolution jusqu'à HTML5. (2 points)
+2. Quel est le rôle du W3C et pourquoi est-il important pour le web ? (1 point)
+3. Décrivez la différence entre une page web statique et une page web dynamique. (1 point)
+4. Nommez et expliquez trois balises HTML essentielles pour structurer une page web. (2 points)
+5. Citez et expliquez les trois types d'intégration du CSS dans une page web. (2 points)
+6. Quelle est la différence entre un sélecteur de classe et un sélecteur d'identifiant en CSS ? (1 point)
+7. Donnez un exemple de code HTML et CSS pour changer la couleur du texte d’un paragraphe en bleu. (1 point)
+
+---
+
+### **Partie 2 : Exercices Pratiques (10 points)**
+
+#### **Exercice 1 : Création d'une Page HTML de Base (3 points)**
+Créez un fichier HTML contenant :
+- Une structure de base HTML5
+- Un titre de page "Mon Premier Site Web"
+- Un en-tête avec un titre principal (h1)
+- Un paragraphe de bienvenue
+- Un lien vers "https://www.ofppt.ma/" avec le texte "Visitez OFPPT"
+
+#### **Exercice 2 : Mise en Page avec CSS (2 points)**
+Créez un fichier CSS externe et appliquez-le à votre page HTML. Ajoutez les règles suivantes :
+- Changer la couleur de fond de la page en gris clair (#f0f0f0)
+- Centrer le texte de l’en-tête
+- Mettre le paragraphe en police Arial et en taille 16px
+
+#### **Exercice 3 : Formulaire d’Inscription (2 points)**
+Créez un formulaire contenant :
+- Un champ "Nom" (obligatoire)
+- Un champ "Email" (avec validation de format)
+- Un champ "Mot de passe" (masqué)
+- Un bouton de soumission
+- Assurez-vous que le formulaire est bien structuré et accessible
+
+#### **Exercice 4 : Tableau HTML (2 points)**
+Créez un tableau affichant une liste de trois étudiants avec leurs noms, prénoms et notes. Assurez-vous d’utiliser la balise `<th>` pour les en-têtes de colonne et d’appliquer un style CSS au tableau (borders, padding, background color alternée pour les lignes).
+
+#### **Exercice 5 : Utilisation de Bootstrap (1 point)**
+Ajoutez Bootstrap à votre page et utilisez une classe de Bootstrap pour rendre votre formulaire responsive. Vous devez :
+- Ajouter le CDN Bootstrap dans le `<head>` du document HTML
+- Utiliser une classe Bootstrap pour aligner le formulaire au centre de la page
+- Ajouter des classes Bootstrap aux champs de formulaire pour une meilleure présentation
+
+---
+
+### **Critères de Correction :**
+- Respect des consignes et bonne structure du code (4 points)
+- Bonne utilisation des balises HTML et des propriétés CSS (4 points)
+- Validation du formulaire et bonne syntaxe des attributs (2 points)
+
+**Bonne chance !**
+
+-->
+
+
+<!--
+!Partie 1 :
+    *4 :
+        -> head
+        -> body
+        -> main / section
+        -> footer
+
+    *5 :
+        -> inline style (integration dans la balise html)
+        -> css file (fichier csss externe)
+        -> style inside html (integration css dans le fichier html)
+    
+    *6 :
+        -> la specificite de l'indentifiant est plus elevee que cella de la classe -->
+
+
+<!--!Partie 2 ex1/2 -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Premier Site web</title>
+    <style>
+        body{
+            background-color: #f0f0f0;
+        }
+
+        header {
+            text-align : center ;
+        }
+
+        main p {
+            font-family : Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>titre principal</h1>
+    </header>
+    
+    <main>
+        <p>bienvenue</p>
+        <a href="https://www.ofppt.ma">OFPPT</a>
+    </main>
+</body>
+</html>  -->
+
+
+
+<!--!Partie 2 ex3-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire d’Inscription</h1>
+    <form action="inscription.php">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom">    <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email"> <br>
+
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password">   <br>
+        
+        <button type="submit">Soumission</button>
+    </form>
+
+</body>
+</html> -->
+
+
+<!--!Partie 2 ex4-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Tableau</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>nom</th>
+                    <th>Prenom</th>
+                    <th>note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>aarab</td>
+                    <td>abdulrahman</td>
+                    <td>my project</td>
+                </tr>
+                <tr>
+                    <td>aarab</td>
+                    <td>abdulrahman</td>
+                    <td>my project</td>
+                </tr>
+                <tr>
+                    <td>aarab</td>
+                    <td>abdulrahman</td>
+                    <td>my project</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html> -->
