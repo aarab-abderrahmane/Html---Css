@@ -148,12 +148,38 @@ Ajoutez Bootstrap à votre page et utilisez une classe de Bootstrap pour rendre 
 
 
 <!--!Partie 2 ex4-->
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Tableau</title>
+
+        <style>
+            table{
+                border: 1px dashed  #000;
+                border-collapse: collapse;
+            }
+
+            th,td{
+                padding: 10px;
+                text-align: center;
+                
+
+                border: 1px dashed black
+
+            }
+
+            tr:nth-child(even){
+                background-color: lightblue;
+            }
+
+            body{
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+
     </head>
     <body>
         <table>
@@ -183,4 +209,4 @@ Ajoutez Bootstrap à votre page et utilisez une classe de Bootstrap pour rendre 
             </tbody>
         </table>
     </body>
-</html> -->
+</html>
