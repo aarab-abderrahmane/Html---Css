@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body{
+            margin:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+            height: 100vh;
+            margin: 0 5rem ;
+        }
+
+        .cards{
+            display: flex;
+            justify-content: center;
+            gap:20px
+        }
+
+        h1{
+            letter-spacing: 1px;
+        }
+
+        .container{
+            padding: 2em;
+            border : 2px dashed black;
+            border-radius: 20px;
+
+        }
+
+        .card span i {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .paragraphe span{
+            display: block;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        i{
+            font-size: 1.3rem;
+            color: lightcoral;
+        }
+        
+        .buttons {
+            overflow:hidden;
+            display: flex;
+            justify-content: space-between;
+            border: 1px dashed  black;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .buttons button:last-child{
+           padding: 10px;
+           width: 10em;
+
+           border-radius: 0 20px 20px 0;
+           border: none;
+           border-left: 1px dashed black;
+        }
+
+        .buttons button:first-child{
+            width: auto;
+            padding: 10px;
+            flex-grow: 1;
+            border:none
+        }
+
+        .buttons button:first-child:hover{background-color: lightpink;}
+
+        .buttons button:last-child:hover{background-color: lightgoldenrodyellow;}
+
+        a{
+            color: black;
+            margin-right: 10px;
+
+        }
+
+        a:hover{
+            color: rgb(31, 207, 207);
+        }
+
+        .container div:first-of-type{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Best Tools & Utilities Software</h1>
+        <div>
+            <a href="#">WINDOWS</a>
+            <a href="#">MAC</a>
+            <a href="#">ANDROID</a>
+            <a href="#">IOS</a>
+        </div>
+        <div class="cards">
+
+            <div class="card">
+                <span>
+                    <i class="fa-solid fa-user"></i>
+                    <p class="paragraphe">VPN gate client plug-in with softether vpn client<span>FREE</span></p>
+                </span>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure soluta assumenda saepe ut magnam dolorem aspernatur omnis necessitatibus corporis sed, deleniti corrupti sint placeat quibusdam velit impedit facere voluptates esse.</p>
+            </div>
+
+            <div class="card">
+                <span>
+                    <i class="fa-solid fa-user"></i>
+                    <p class="paragraphe">VPN gate client plug-in with softether vpn client<span>FREE</span></p>
+                </span>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure soluta assumenda saepe ut magnam dolorem aspernatur omnis necessitatibus corporis sed, deleniti corrupti sint placeat quibusdam velit impedit facere voluptates esse.</p>
+            </div>
+
+
+            <div class="card">
+                <span>
+                    <i class="fa-solid fa-user"></i>
+                    <p class="paragraphe">VPN gate client plug-in with softether vpn client<span>FREE</span></p>
+                </span>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure soluta assumenda saepe ut magnam dolorem aspernatur omnis necessitatibus corporis sed, deleniti corrupti sint placeat quibusdam velit impedit facere voluptates esse.</p>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button class="btn-1">SEL ALL</button>
+            <button class="btn-2">Voter</button>
+        </div>
+    </div>
+</body>
+</html>
