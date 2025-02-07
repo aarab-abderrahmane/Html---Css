@@ -1,0 +1,25 @@
+1-
+    -liste ordonnee <ol>
+    -list non ordonnee <ul>
+    -liste de definition <dl> <dt> <dd>
+    -liste imbriquee
+
+2-
+    <iframe  width="500" height="500" src="" ></frame>
+
+3-
+    -css interne : la balise <style>
+    -css externe : fichier css
+    -inline style (en ligne) : l'attribut style=""
+
+4-
+    word-spacing : contorle l'espacement entre les mots
+    text-decoration : permet d'ajouter des decoration au texte
+    text-transform : permet de control la transformation de text (lowercase , uppercase)
+
+5-
+    animation-name
+    animation-duration
+    animation-timing-function
+    animation-delay
+    

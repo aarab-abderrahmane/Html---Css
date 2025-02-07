@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        nav{
+            position: sticky;
+            display: flex ;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            margin-top: -15px;
+            padding: 0 10px;
+        }
+
+        nav div img{
+            object-fit:contain;
+            width: 140px;
+        }
+
+        nav div{
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            gap:20px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li:last-child {
+            background-color: lightgreen;
+            padding: 5px 10px ;
+            border-radius: 8px;
+            border: 1px dashed black;
+        }
+
+        nav ul li:nth-child(4) select{
+            padding: 5px 10px;
+            border: none;
+        }
+    
+
+      
+        
+        
+    </style>
+</head>
+<body>
+    
+
+    <nav>  
+        <div>
+            <img src="../../images/icons/3711ff165624403.Y3JvcCw4MjAsNjQxLDAsMg.png" alt="ofppt-logo">  
+            <h1>DRC5-Forum Regional</h1>
+        </div>
+
+        <ul>
+            <li><a href="#">ACCUEIL</a></li>
+            <li><a href="#">AGENDA</a></li>
+            <li><a href="#">OBJECTIFS</a></li>
+            <li>
+                <select>
+                    <option value="#" disabled selected>INSCRIPTION</option>
+                    <option value="">S'incrire</option>
+                    <option value="">Prise de RDV</option>
+                    <option value="">Imprimer</option>
+                </select>
+            </li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SE CONNECTER</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
