@@ -4,76 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page htmk</title>
+
+    <style>
+
+        body{
+            font-family: monospace;
+            box-sizing: border-box;
+        }
+
+        h1{
+            color:blue;
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+        form {
+            border: 1px dashed black;
+            padding: 20px;
+
+            box-shadow: 5px 5px 0 violet;
+        }
+
+        form input{
+            margin-bottom: 10px;
+        }
+
+        .gallery{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .gallery img{
+            object-fit: cover;
+            width: 20%;
+        }
+
+
+        @media (max-width: 700px){
+            .gallery{
+                flex-direction: column;
+                gap: 10Px;
+            }
+
+            .gallery img { width: 80%;}
+        }
+    </style>
 </head>
-<body>
-        <h1>titre</h1>
+<body>  
+        <header>
+            <h1>Bienvenue</h1>
+        </header>
 
-        <p>prargraphe</p>
-        <img src="../images/FIFA Football Logo Font.jpg" alt="fifa-card" style="width:200px;height: 300px;">
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
-        <h2>Liste non ordonnee</h2>
-        <ul type="circle">
-            <li>type circle 1</li>
-            <li>type circle 2</li>
-            <li>type circle 3</li>
-            <li>type circle 4</li>
-            <li>type circle 5</li>
-            <li>type circle 6</li>
-        </ul>
+        <main>
 
-        <ul type="square">
-            <li>type square 1</li>
-            <li>type square 2</li>
-            <li>type square 3</li>
-            <li>type square 4</li>
-            <li>type square 5</li>
-            <li>type square 6</li>
-        </ul>
+            <h1>titre</h1>
 
 
+            <p>prargraphe</p>
 
-        <h2>Liste ordonnee</h2>
-        <ol type="A">
-            <li>element 1</li>
-            <li>element 2</li>
-            <li>element 3</li>     
-        </ol>
-
-        <ol type="I">
-            <li>element 1</li>
-            <li>element 2</li>
-            <li>Decimal (1, 2, 3, ...) → Default<br>
-                Decimal with leading zero (01, 02, 03, ...)<br>
-                Lowercase Roman (i, ii, iii, ...)<br>
-                Uppercase Roman (I, II, III, ...)<br>
-                Lowercase Alphabet (a, b, c, ...)<br>
-                Uppercase Alphabet (A, B, C, ...)</li>     
-        </ol>
-
-        <p>or use this way " style="list-style-type: upper-roman;"       </p>
-
-
-
-        <div class="formulaire">
-
-            <h1>Formulaire</h1>
-            <form action="inscription.php">
-                <label for="nom">Nom</label>
-                <input id="nom" type="text">
+            <div class="gallery">
+                <img src="../images/FIFA Football Logo Font.jpg" alt="fifa-card" >
+                <img src="../images/FIFA Football Logo Font.jpg" alt="fifa-card" >
+                <img src="../images/FIFA Football Logo Font.jpg" alt="fifa-card" >
+                <img src="../images/FIFA Football Logo Font.jpg" alt="fifa-card" >
+            </div>
     
-                <label for="email">email</label>
-                <input type="email" id="email">
+            <h2>Liste non ordonnee</h2>
+            <ul type="circle">
+                <li>type circle 1</li>
+                <li>type circle 2</li>
+                <li>type circle 3</li>
+                <li>type circle 4</li>
+                <li>type circle 5</li>
+                <li>type circle 6</li>
+            </ul>
     
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password">
+            <ul type="square">
+                <li>type square 1</li>
+                <li>type square 2</li>
+                <li>type square 3</li>
+                <li>type square 4</li>
+                <li>type square 5</li>
+                <li>type square 6</li>
+            </ul>
     
-                <div>
-                    <button type="submit">Soumettre</button>
-                    <button type="reset">Reinitialiser</button>
-                </div>
-            </form>
+    
+    
+            <h2>Liste ordonnee</h2>
+            <ol type="A">
+                <li>element 1</li>
+                <li>element 2</li>
+                <li>element 3</li>     
+            </ol>
+    
+            <ol type="I">
+                <li>element 1</li>
+                <li>element 2</li>
+                <li>Decimal (1, 2, 3, ...) → Default<br>
+                    Decimal with leading zero (01, 02, 03, ...)<br>
+                    Lowercase Roman (i, ii, iii, ...)<br>
+                    Uppercase Roman (I, II, III, ...)<br>
+                    Lowercase Alphabet (a, b, c, ...)<br>
+                    Uppercase Alphabet (A, B, C, ...)</li>     
+            </ol>
+    
+            <p>or use this way " style="list-style-type: upper-roman;"       </p>
+    
+    
+    
+            <div class="formulaire">
+    
+                <h1>Formulaire</h1>
+                <form action="inscription.php">
+                    <label for="nom">Nom</label>
+                    <input id="nom" type="text"><br>
+        
+                    <label for="email">email</label>
+                    <input type="email" id="email"><br>
+        
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password"><br>
+        
+                    <div>
+                        <button type="submit">Soumettre</button>
+                        <button type="reset">Reinitialiser</button>
+                    </div>
+                </form>
+            </div>   
+        </main>
+
+        <aside>
+            <p>information supplementaires</p>
+        </aside>
+
+        <footer>
+            <p>&copy;2025</p>
+        </footer>
+        
           
 
-        </div>
 </body>
 </html>
