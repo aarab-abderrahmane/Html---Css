@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Full version of jQuery (not slim) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <style>
+        *{box-sizing: border-box;font-family: cursive;}
+        header img{
+            width: 45px;
+            object-fit: cover;
+        }
+
+        header{
+            background-color: rgb(182, 178, 178);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav{margin-top: 15px;}
+
+        header div:first-of-type button{
+            border-radius: 8px;
+            background-color: lightcyan;
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+
+        header div:first-of-type{display: flex;align-items: center;gap: 10px;}
+
+        #search{
+            padding: 5px 10px ;
+            border-radius: 8px;
+            border: none;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{color: blue;}
+
+        select{
+            background-color: rgb(182, 178, 178) !important;
+            color: white !important;
+            border: none !important;
+            width: 110px !important;
+        }
+
+        select option{
+            background-color: white !important;
+            color: black !important;
+        }
+
+        header div:first-of-type input,button {margin-right: 1.5rem;}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="../../images/icons/verifie.png" alt="logo">
+
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li>
+
+                    <select name="select" id="slectbox" class="form-control">
+                        <option value="Action" disabled selected>Menu</option>
+                        <option value="Action">Dejeuner</option>
+                        <option value="Action">Services</option>
+
+                    </select>
+                  
+                </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div >
+            <input type="text" name="search" id="search" placeholder="Taper un plat">
+            <button type="button">RECHERCHE</button>
+        </div>
+    </header>
+
+</body>
+</html>

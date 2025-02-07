@@ -1,0 +1,39 @@
+
+    2- Un attribut universel est un attribut qui peut être appliqué à n'importe quel élément HTML
+    4- Un sélecteur universel (*) est un sélecteur CSS qui sélectionne tous les éléments d'une page Web
+
+    1-
+        *<p> -> balise ouvrante
+        *text -> contenu a l'interieur du paragraphe 
+        *</p> -> balise fermante
+
+    
+    3- La balise <optgroup> est utilisée à l'intérieur d'un <select> pour regrouper des options
+        exemple : 
+                <select>
+                    <optgroup label="Fruits">
+                        <option value="pomme">Pomme</option>
+                        <option value="banane">Banane</option>
+                    </optgroup>
+                </select>
+
+    5- Un moteur de rendu est un composant logiciel qui interprète le code HTML, CSS, et JavaScript pour afficher la page web dans le navigateur.
+
+    8- a
+
+    9- b
+
+    10- 
+        @media (max-width:786px) and (min-width:576px) {
+            .menu a {
+                color : orange;
+            }
+        }
+
+
+    *odd -> impaire  | even --> paire
+    7- li:ntch-child(odd):nth-child(n+3){
+        color : red
+    }
+
+    6- chemin relatif
