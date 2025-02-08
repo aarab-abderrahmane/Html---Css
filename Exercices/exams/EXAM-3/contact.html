@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgba(250, 250, 210, 0.100);
+        }
+
+        .container img{
+
+            object-fit: cover;
+            width: 22em;
+            height: auto;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+
+            
+        }
+
+        .container{
+            display: flex;
+            border: 1px dashed black;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.548);
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            gap: 2em;
+            margin-top: 2em;
+            box-shadow: -60px -18px 80px 20px rgb(255, 255, 255);
+
+                }
+
+        form input,textarea,button{
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid   black;
+        }
+
+        form div:first-of-type{
+            display: flex;
+            gap: 10px;
+        }
+
+        #email {
+            flex-grow: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="wallpaperflare.com_wallpaper_desktop.jpg" alt="desktop">
+        <form action="contact.php">
+            <div>
+                <input type="text" placeholder="Nom complet " />
+                <input type="email" placeholder="Votre Email" id="email" />
+            </div>
+
+            <input type="text" name="objet" id="objet" placeholder="objet">
+            <textarea rows="12" >Message</textarea>
+            <button type="submit">Envoyer</button>
+            
+        </form>
+    </div>
+</body>
+</html>
