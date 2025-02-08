@@ -11,7 +11,7 @@
             box-sizing: border-box;
         }
 
-        body{margin: 0;}
+        body{margin: 0;display: flex;flex-direction: column;align-items: center;}
         nav{
             position: sticky;
             display: flex ;
@@ -124,6 +124,76 @@
             border-radius: 8px;
         }
 
+        .hero_buttons button:hover {
+            background-color: rgba(255, 255, 255, 0.500);
+        }
+
+
+        .hero_buttons  a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+
+        body section:nth-child(3){
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+        }
+
+        body section:nth-child(3) p{
+            width: 400px;
+        }
+
+        p::selection{
+            color: white;
+            background-color: rgba(255, 0, 0, 0.733);
+        }
+
+        body section:nth-child(3) p:first-child{
+            border-right: 1px dashed black;
+            padding-right: 20px;
+        }
+
+
+        footer img{
+            object-fit: contain;
+            width: 20px;
+          
+        }
+
+        footer a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+
+        
+        footer {
+            display: flex;
+            justify-content: center;
+            gap:10rem;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid  black;
+            border-radius: 8px;
+            width: 70vw;
+            /* position: relative;
+            left: 10%;
+            bottom: 0; */
+            background-color: rgba(128, 128, 128, 0.116);
+        }
+
+        .footer-item{
+            display: flex;
+            align-items: center;
+            gap:10px
+        }
 
 
         
@@ -160,13 +230,37 @@
     <section class="hero">
         <div>
             <h1>Forum regional des metiers du <span>tertiaire</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia enim deserunt aliquid quia deleniti adipisci doloremque molestias nisi harum, at dolores libero! Excepturi fugiat reprehenderit atque libero sunt, animi similique?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia enim deserunt aliquid quia deleniti adipisci doloremque molestias nisi harum, at dolores libero! Excepturi fugiat rephenderit atque libero sunt, animi similique?</p>
             <div class="hero_buttons">
-                <button type="button">S'incrire</button>
-                <button type="button">Aide ?</button>
+                <button type="button"><a href="inscription.html">S'incrire</a></button>
+                <button type="button"><a href="aide.html">Aide ?</a></button>
             </div>
         </div>
         
     </section>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, recusandae quisquam? Vitae mollitia temporibus reiciendis iusto vero similique ut. Libero doloribus quasi amet perspiciatis veritatis odio iste excepturi distinctio officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sint commodi a aperiam tempora ipsum, corporis error nostrum in sequi magnam quisquam iure omnis, natus voluptates magni ut vero odit!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit repudiandae ea animi nam culpa temporibus. Deserunt ipsam molestias minus, doloremque laborum, culpa officiis fugit autem voluptate dolorum omnis earum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, recusandae quisquam? Vitae mollitia temporibus reiciendis iusto vero similique ut. Libero doloribus quasi amet perspiciatis veritatis odio iste excepturi distinctio officia?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, distinctio cumque, earum, eligendi in dolorem dolorum consequatur ipsa porro id delectus! Vero doloribus ipsam facere reiciendis sapiente corporis magnam praesentium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, saepe. Fugit neque qui id a similique laudantium exercitationem doloribus, modi voluptates incidunt nobis optio nostrum quisquam veniam magni, consequuntur architecto.</p>
+
+    </section>
+
+
+    <footer>
+        <div class="footer-item">
+            <img src="../../images/icons/maps-and-flags.png" alt="maps">
+            <span>50, Rue Caporal Driss Chbakou Ain Borja<br>20300 - Casablanca, Maroc</span>
+        </div>
+
+        <div class="footer-item">
+            <img src="../../images/icons/gmail.png" alt="gmail">
+            <span><a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBxqGdCzbDnnMgdmhjjzTccsgXpTXrwKmDmLJKnQcKwqlhmbfdBHKTNsTpNdQXqZKpZLSF">abdulrahman.colon@gmail.com </a></span>
+        </div>
+
+        <div  class="footer-item">
+            <img src="../../images/icons/phone-call.png" alt="phone">
+            <span>05215215432556485875</span>
+        </div>
+    </footer>
 </body>
 </html>
