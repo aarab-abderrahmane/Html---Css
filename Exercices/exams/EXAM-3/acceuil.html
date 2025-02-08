@@ -6,14 +6,25 @@
     <title>Document</title>
 
     <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{margin: 0;}
         nav{
             position: sticky;
             display: flex ;
             justify-content: space-between;
             align-items: center;
-            margin: 0;
             margin-top: -15px;
-            padding: 0 10px;
+            padding: 0px 20px;
+
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0.500);
+            width: 100%;
+            right: 0;
+            top: 0;
         }
 
         nav div img{
@@ -48,10 +59,74 @@
         nav ul li:nth-child(4) select{
             padding: 5px 10px;
             border: none;
+            background-color: rgba(255, 255, 255, 0);
         }
     
 
-      
+
+        body section:first-of-type{
+            background: url("wallpaperflare.com_wallpaper (2).jpg") no-repeat  ;
+            background-size: cover;
+            background-position: center;
+            background-attachment:fixed;
+            height: 100vh;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: end;
+            
+
+        }
+
+        .hero div{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin: 0px 0px 50px 10vw;
+
+        }
+
+
+        .hero div h1{
+            color: rgb(255, 0, 0);
+            word-spacing: 3px;
+            font-size: 1.9em;
+        }   
+
+
+        .hero div p{
+            color: rgb(255, 255, 255);
+            margin-top: -7px;
+            font-size: 1.3em;
+            font-weight: 500;
+            width: 600px;
+        }
+        
+        .hero div h1 span{
+            display: block;
+        }
+
+        div.hero_buttons{
+            width: 100%;
+            margin-left: 0;
+            display: flex;
+            flex-direction: row;
+            gap:20px
+
+        }
+
+        .hero_buttons button{
+            padding: 15px 50px;
+            width: 200px;
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0.534);
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+
+
+
+        
         
         
     </style>
@@ -81,5 +156,17 @@
             <li><a href="#">SE CONNECTER</a></li>
         </ul>
     </nav>
+
+    <section class="hero">
+        <div>
+            <h1>Forum regional des metiers du <span>tertiaire</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia enim deserunt aliquid quia deleniti adipisci doloremque molestias nisi harum, at dolores libero! Excepturi fugiat reprehenderit atque libero sunt, animi similique?</p>
+            <div class="hero_buttons">
+                <button type="button">S'incrire</button>
+                <button type="button">Aide ?</button>
+            </div>
+        </div>
+        
+    </section>
 </body>
 </html>
