@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+        }
+
+        /* sibling selecteur */
+        .item1 h1 ~ p {  
+            /*select all p after h1 */
+            color: green;
+        }
+
+
+        .item1 h2 + p {
+
+            /* selec first element after h2 */
+
+            color:red
+        }
+
+        .item1 h1 + p {
+            color: blue;
+        }
+
+
+
+        /* child selector */
+
+        .item2 > p{
+            /* select all p inside div */
+
+            color: blueviolet;
+        }
+
+        .item2 + p {
+            color:red
+        }
+
+        nav > ul > li {
+            color : violet
+        }
+
+        .item3 > *{
+
+            /* all elements inside item3 */
+            background-color: lightcoral;
+        }
+
+
+        .input-box {
+        width: 20ch; /* The width will be based on 20 times the width of the "0" character */
+        border: 1px solid black;
+        font-family: monospace;
+        font-size: 16px;
+        }
+
+        object {
+            display: block;
+        }
+
+        .anim{
+            padding: 20px;
+            animation: exemple 5s linear infinite;
+            animation-direction: reverse;
+        }
+
+        @keyframes exemple {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(100px);
+            }
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+
+        <div class="container">
+            <div class="item1">
+                <h1>hello world !</h1>
+                <h2>hello</h2>
+                <p>paragraphe 1</p>
+                <p>paragraphe 2</p>
+                <p>paragraphe 3</p>
+            </div>
+            <hr>
+            <div class="item2">
+                <h1>hello world !</h1>
+                <h2>hello</h2>
+                <p>paragraphe 1</p>
+                <p>paragraphe 2</p>
+                <p>paragraphe 3</p>
+            </div>
+
+            <p>hello abderrahmane</p>
+
+
+            <nav>
+                <li>@2024</li>
+                <ul>
+                    <li>@2025</li>
+                </ul>
+                <ul>
+                    <li>@2025</li>
+                </ul>
+            </nav>
+
+            <div class="item3">
+                <h1>hello world !</h1>
+                <h2>hello</h2>
+                <p>paragraphe 1</p>
+                <p>paragraphe 2</p>
+                <p>paragraphe 3</p>
+            </div>
+
+            <input type="text" class="input-box" placeholder="Type something...">
+
+            <object data="exams/EXAM-2/ilide.info-efm-regionale-m104-web-statique-pr_6c85b413c00dc9665f1a3875f4a81c14.pdf" type="application/pdf" width="600" height="400">
+                Votre navigateur ne supporte pas les fichiers PDF.
+            </object>
+
+            <div class="anim">
+                hello 
+            </div>
+              
+        </div>
+    
+        
+        
+
+
+</body>
+</html>

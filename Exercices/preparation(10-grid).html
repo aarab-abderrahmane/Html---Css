@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+
+        body{
+            margin: 0;
+        }
+        
+        .container{
+           
+            display: grid;
+            border: 1px solid black;
+
+            grid-template-columns: repeat(auto-fit,minmax(180px,25%)) ;
+            grid-auto-rows: 1fr;
+
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+
+        }
+
+        .container > *{
+            border: 1px solid  black;
+            padding: 5px;
+            margin: 2px;
+            overflow: hidden;
+            transition: transform 0.5s ease;
+
+        }
+
+        .container >div{position: relative;}
+
+        .item-1{
+            background-color: red;
+        }
+
+        img{
+            opacity: 0;
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 25vw;
+            height: auto;
+            object-fit:cover;
+        }
+
+        .item-2{
+            background-color: violet;
+        }
+
+        .item-3{
+            background-color: green ;
+        }
+
+        .item-4{
+            background-color: black;
+            color: white;
+        }
+
+        .item-5{
+            background-color: purple;
+        }
+        .item-6{
+            background-color: aqua;
+        }
+
+        /* .container > *:hover{
+            opacity: 0;
+            filter: blur(1px);
+
+
+        } */
+
+        /* .container > div:active{
+            /* transform: rotatey(120deg); */
+            /* opacity: 0; */
+            /* background-color: rgba(255, 255, 255, 0.5); */
+        /* } */ 
+
+        /* .container>*:active .fifa{
+            z-index: 20;
+            opacity: 1;
+        } */
+
+        .container>div:active .fifa{
+            opacity: 1;
+        }
+        /* .item-1:active .fifa{
+            opacity: 1;
+        } */
+
+
+    </style>
+
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <div class="item-1">
+            item-1 
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+            
+        </div>
+
+       
+        <div class="item-2">item-2
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+        <div class="item-3">item-3
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+        <div class="item-4">item-4
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+        <div class="item-5">item-5
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+        <div class="item-6">item-6
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+
+        <div class="item-1">item-1
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+        <div class="item-2">item-2
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+        <div class="item-3">item-3
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+        <div class="item-4">item-4
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+        <div class="item-5">item-5
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+        <div class="item-6">item-6
+            <img  class='fifa' src="images/FIFA Football Logo Font.jpg" alt="" >
+
+        </div>
+    </div>
+
+</body>
+</html>
